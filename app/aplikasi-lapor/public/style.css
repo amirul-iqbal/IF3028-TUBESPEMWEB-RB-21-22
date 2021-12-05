@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#placeholder-cari{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#icon-cari{
+    padding-right: 5px;
+}
+
+#btn-cari{
+    position: absolute;
+    margin-left: 0px;
+    width: 11%;
+    height: 50px;
+}
+
+.fa-plus-square{
+    padding-left: 5px;
+}
+
+.cari{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    margin: 5px 0px;
+}
+
+.konten-home{
+    height: 1000px;
+    margin: 0px 150px;
+    background-color: salmon;
+    text-align: center;
+}
+
+.konten-home h1{
+    padding: 30px 0;
+}
+
+.list-laporan{
+    height: 750px;
+    background-color: white;
+    margin: 0 100px;
+}
