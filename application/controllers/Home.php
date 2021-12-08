@@ -21,7 +21,7 @@ class Home extends CI_Controller
     {
         $data["judul"] = "Simple Lapor";
         $this->load->view('template/header', $data);
-        $this->load->view('tambah-laporan');
+        $this->load->view('tambah_laporan');
         $this->load->view('template/footer');
     }
     public function login()
@@ -29,4 +29,3 @@ class Home extends CI_Controller
             $data["judul"] = "Login | DL Logistik";
     }
 }
-?>
