@@ -3,15 +3,15 @@
         Simple Lapor !
     </h1>
 </div>
-<div class="search">
-    <input type="text" name="search" placeholder="Cari disini" autocomplete="off">
-</div>
+<form action="" method="post">
+    <input type="text" id="search" name="search" placeholder="Cari disini" autocomplete="off">
+</form>
 <div>
     <a class="buat" href="<?= base_url('home/buat') ?>">Buat Laporan/Komentar &plus; </a>
 </div>
 
 <!-- List View untuk daftar laporan -->
-<div class="list-laporan">
+<div class="content">
     <ul>
         <!-- akan ditambah perulangan untuk menampilkan list -->
         <li>
@@ -22,5 +22,5 @@
 </div>
 <!-- List View untuk daftar laporan -->
 
-<script src="<?= base_url('application/asset/script/main.js') ?>"></script>
+<script src="<?= base_url('assets/script/main.js'); ?>"></script>
 </body>
