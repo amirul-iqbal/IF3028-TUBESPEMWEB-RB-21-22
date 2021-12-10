@@ -10,6 +10,10 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa (maksimal 3 orang mahasiswa!).
+Nama Anggota :
+Muhammad Naufal Ghani   119140213
+Rayhan Athalla Ghifary  119140225
+RIAN DIKA ERLANGGA      119140222
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
