@@ -98,8 +98,38 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 ### Bonus
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
-### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+### **Penjelasan Teknis**
+**Instalasi Framework Codeigniter 3.1**
+      -Download Framework CI
+      -Melakukan konfigurasi dasar CI pada folder config
+      -Perancangan roadmap flowchart pembuatan aplikasi
+      -Coding dan Debugging
+
+## **Spesifikasi Simple LAPOR!**
+   - framework  : Codeigniter 3.1
+   - DBMS       : mysql
+   - Languange  : PHP, Javascript (Native)
+   - Fitur      : CRUD Laporan , Validisasi form, Search komentar.
+
+## **CARA INSTALASI**
+   - Clone git dengan gitbash / Download repository ini ke PC anda masing masing, Letakkan di folder XAMPP/ WAMP/ LAMP.
+   - Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
+   -setting base_url sesuai dengan folder server local
+   -Nikmati layanan website lapor kami tanpa bugfree!. 
+   -Terimakasih telah menggunakan program kami.
+
+![](link)
+   -Tampilan BlaBlaBla
+![](link)
+   -Tampilan BlaBlaBla
+![](link)
+   -Tampilan BlaBlaBla
+![](link)
+   -Tampilan BlaBlaBla
+![](link)
+   -Tampilan BlaBlaBla
+![](link)
+   -Tampilan BlaBlaBla
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
