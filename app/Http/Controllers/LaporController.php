@@ -24,7 +24,7 @@ class LaporController extends Controller
  
 	public function store(Request $request){
 		$this->validate($request, [
-			'lampiran' => 'file|image|mimes:jpeg,png,jpg,pdf|max:2048',
+			'lampiran' => 'required|file|image|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
 		]);
  
 		// menyimpan data file yang diupload ke variabel $file
@@ -45,4 +45,38 @@ class LaporController extends Controller
         
 		return redirect('/');
 	}
+
+    public function update($id) {
+        $report = Report::find($id);
+        return view('edit', ['report' => $report]);
+    }
+
+    public function updated($id, Request $request) {
+        $report = Report::find($id);
+        $this->validate($request, [
+			'lampiran' => 'required|file|image|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
+		]);
+ 
+		// menyimpan data file yang diupload ke variabel $file
+		$file = $request->file('lampiran');
+ 
+		$filename = time()."_".$file->getClientOriginalName();
+ 
+      	        // isi dengan nama folder tempat kemana file diupload
+		$folder = public_path('lampiran');
+        $file->move($folder, $filename);
+
+        $report->excerpt = substr($request->laporan, 0, 200);
+        $report->body = $request->laporan;
+        $report->aspek = $request->aspek;
+        $report->lampiran = $filename;
+        $report->save();
+        return redirect('/');
+    }
+
+    public function delete($id) {
+        $report = Report::find($id);
+        $report->delete();
+        return redirect('/');
+    }
 }

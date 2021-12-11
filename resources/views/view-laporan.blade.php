@@ -31,9 +31,9 @@
                         <label class="aspek">Aspek : {{ $report->aspek }}</label>
                     </div>
                     <div class="delete">
-                        <a href="">Edit Laporan/Komentar</a>
+                        <a href="/edit/{{ $report->id }}">Edit Laporan/Komentar</a>
                         <br>
-                        <a href="">Hapus Laporan/Komentar <img src="/images/button.png" width="13px" height="13px"></a>
+                        <a href="/delete/{{ $report->id }}">Hapus Laporan/Komentar <img src="/images/button.png" width="13px" height="13px"></a>
                     </div>
                 </div>
 

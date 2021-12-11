@@ -23,4 +23,10 @@ Route::get('/view-laporan/{id}', [LaporController::class, 'show']);
 
 Route::post('/store', [LaporController::class, 'store']);
 
+Route::get('/edit/{id}', [LaporController::class, 'update']);
+
+Route::get('/delete/{id}', [LaporController::class, 'delete']);
+
+Route::post('/update/{id}', [LaporController::class, 'updated']);
+
 
