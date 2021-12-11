@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="css/style-home.css">
+        <link rel="stylesheet" type="text/css" href="/css/style-home.css">
         <title>Lapor</title>
     </head>
     <body>
@@ -31,7 +31,8 @@
                     <p>{{ $r->excerpt }}</p>
 
                     <div class="lampiran"><!-- Gambar ini cuma dummy yaak, ntar di import dari data base phpnya -->
-                        <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="200px" height="200px">
+                        {{-- <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="200px" height="200px"> --}}
+                        <a href="/lampiran/{{ $r->lampiran }}"> {{ $r->lampiran }}</a>
                         <div class="info">
                             <p class="time">Waktu : {{ $r->submited_at }}</p>
                             <a href="/view-laporan/{{ $r->id }}">Lihat Selengkapnya &emsp; <strong>></strong></a>

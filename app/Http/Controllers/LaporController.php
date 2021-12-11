@@ -54,7 +54,7 @@ class LaporController extends Controller
     public function updated($id, Request $request) {
         $report = Report::find($id);
         $this->validate($request, [
-			'lampiran' => 'required|file|image|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
+			'lampiran' => 'required|string|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
 		]);
  
 		// menyimpan data file yang diupload ke variabel $file
