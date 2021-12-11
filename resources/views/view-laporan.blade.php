@@ -22,7 +22,12 @@
 
                 <div class="lampiran">
                     <p>Lampiran : </p>
-                    <img src="{{ url('/lampiran/'. $report->lampiran) }}" width="200px" height="200px">
+                    @if ($report->extensi == 'png' or $report->extensi == 'jpg' or $report->extensi == 'jpeg' )
+                        <img src="{{ url('/lampiran/'. $report->lampiran) }}" width="200px" height="200px">
+                    @else
+                        <a href="/lampiran/{{ $report->lampiran }}"> {{ $report->lampiran }}</a>
+                    @endif
+                    
                 </div>
 
                 <div class="info">
@@ -42,7 +47,7 @@
             </main>
         </div>
         <footer>
-            
+          
         </footer>
     </body>
 </html>

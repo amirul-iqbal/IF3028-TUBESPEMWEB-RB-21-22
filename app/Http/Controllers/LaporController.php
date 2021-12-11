@@ -24,15 +24,14 @@ class LaporController extends Controller
  
 	public function store(Request $request){
 		$this->validate($request, [
-			'lampiran' => 'required|file|image|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
+			'lampiran' => 'required|file|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx,zip|max:2048',
 		]);
  
-		// menyimpan data file yang diupload ke variabel $file
 		$file = $request->file('lampiran');
  
 		$filename = time()."_".$file->getClientOriginalName();
+        $extensi = $file->getClientOriginalExtension();
  
-      	        // isi dengan nama folder tempat kemana file diupload
 		$folder = public_path('lampiran');
         $file->move($folder, $filename);
  
@@ -40,7 +39,8 @@ class LaporController extends Controller
             'excerpt' => substr($request->laporan, 0, 200),
             'body' => $request->laporan,
             'aspek' => $request->aspek,
-			'lampiran' => $filename
+			'lampiran' => $filename,
+            'extensi' => $extensi
 		]);
         
 		return redirect('/');
@@ -54,15 +54,13 @@ class LaporController extends Controller
     public function updated($id, Request $request) {
         $report = Report::find($id);
         $this->validate($request, [
-			'lampiran' => 'required|string|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx|max:2048',
+			'lampiran' => 'required|file|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx,zip|max:2048',
 		]);
  
-		// menyimpan data file yang diupload ke variabel $file
 		$file = $request->file('lampiran');
  
 		$filename = time()."_".$file->getClientOriginalName();
  
-      	        // isi dengan nama folder tempat kemana file diupload
 		$folder = public_path('lampiran');
         $file->move($folder, $filename);
 

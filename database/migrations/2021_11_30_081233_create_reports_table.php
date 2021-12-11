@@ -20,6 +20,7 @@ class CreateReportsTable extends Migration
             $table->string('aspek');
             $table->timestamp('submited_at');
             $table->string('lampiran')->nullable();
+            $table->string('extensi')->nullable();
             $table->timestamps();
         });
     }
