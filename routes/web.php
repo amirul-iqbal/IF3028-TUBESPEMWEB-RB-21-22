@@ -29,4 +29,6 @@ Route::get('/delete/{id}', [LaporController::class, 'delete']);
 
 Route::post('/update/{id}', [LaporController::class, 'updated']);
 
+Route::get('/find', [LaporController::class, 'search']);
+
 

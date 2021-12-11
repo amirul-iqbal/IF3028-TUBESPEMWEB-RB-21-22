@@ -14,8 +14,11 @@
             </header>
             <main>
                 <div class="cari">
-                    <input type="text" name="cari">
-                    <input type="submit" value="Cari">
+                    <form action="/find" method="GET">
+                        {{ csrf_field() }}
+                        <input type="text" name="cari">
+                        <input type="submit" value="Cari">
+                    </form>
                 </div>
                 <div class="add">
                     <label>Tambah Laporan/Komentar</label>
@@ -26,20 +29,26 @@
 
                 <div class="recent"><!-- Ini ntar pake perulangan yaa, ini cuma dummynya -->
                     <hr>
-                    @foreach ( $reports as $r)
 
-                    <p>{{ $r->excerpt }}</p>
+                    @if (empty ($reports)) 
+                        <p> Hasil Tidak Ditemukan! </p>
+                        
+                    @else 
+                        @foreach ( $reports as $r)
 
-                    <div class="lampiran"><!-- Gambar ini cuma dummy yaak, ntar di import dari data base phpnya -->
-                        {{-- <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="200px" height="200px"> --}}
-                        <a href="/lampiran/{{ $r->lampiran }}"> {{ $r->lampiran }}</a>
-                        <div class="info">
-                            <p class="time">Waktu : {{ $r->submited_at }}</p>
-                            <a href="/view-laporan/{{ $r->id }}">Lihat Selengkapnya &emsp; <strong>></strong></a>
+                        <p>{{ $r->excerpt }}</p>
+
+                        <div class="lampiran"><!-- Gambar ini cuma dummy yaak, ntar di import dari data base phpnya -->
+                            {{-- <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="200px" height="200px"> --}}
+                            <a href="/lampiran/{{ $r->lampiran }}"> {{ $r->lampiran }}</a>
+                            <div class="info">
+                                <p class="time">Waktu : {{ $r->submited_at }}</p>
+                                <a href="/view-laporan/{{ $r->id }}">Lihat Selengkapnya &emsp; <strong>></strong></a>
+                            </div>
                         </div>
-                    </div>
-                    <hr>
-                    @endforeach
+                        <hr>
+                        @endforeach
+                    @endif
                 </div>
             </main>
         </div>

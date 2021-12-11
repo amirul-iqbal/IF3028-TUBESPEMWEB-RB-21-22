@@ -60,6 +60,7 @@ class LaporController extends Controller
 		$file = $request->file('lampiran');
  
 		$filename = time()."_".$file->getClientOriginalName();
+        $extensi = $file->getClientOriginalExtension();
  
 		$folder = public_path('lampiran');
         $file->move($folder, $filename);
@@ -68,6 +69,7 @@ class LaporController extends Controller
         $report->body = $request->laporan;
         $report->aspek = $request->aspek;
         $report->lampiran = $filename;
+        $report->extensi = $extensi;
         $report->save();
         return redirect('/');
     }
@@ -76,5 +78,10 @@ class LaporController extends Controller
         $report = Report::find($id);
         $report->delete();
         return redirect('/');
+    }
+
+    public function search(Request $request) {
+        $reports = Report::where('body', 'LIKE', '%'.$request->cari.'%')->orWhere('aspek', 'LIKE', '%'.$request->cari.'%')->orWhere('submited_at', 'LIKE', '%'.$request->cari.'%')->get();
+        return view('home', ['reports' => $reports]);
     }
 }
