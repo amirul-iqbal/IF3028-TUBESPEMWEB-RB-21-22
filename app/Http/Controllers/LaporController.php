@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class LaporController extends Controller
 {
     public function index() {
-        return view('home');
+        $reports = DB::table('reports')->get();
+
+        return view('home', ['reports' => $reports]);
     }
 
     public function laporan() {
