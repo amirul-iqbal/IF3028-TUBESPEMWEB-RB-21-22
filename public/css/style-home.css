@@ -1,5 +1,5 @@
 body {
-	background-image: url(/images/bg-cover.png);
+	background-image: url(bg/bg-cover.png);
 }
 
 .cover {
@@ -49,6 +49,45 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
+h4 {
+    text-align: center;
+}
+
 .add a {
     margin-left: 8px;
+}
+
+hr {
+    border: solid;
+    border-radius: 3px;
+}
+
+.recent {
+    width: 615px;
+    margin: auto;
+}
+
+.time {
+    margin: 0px;
+}
+
+.lampiran {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.info a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: justify;
 }
