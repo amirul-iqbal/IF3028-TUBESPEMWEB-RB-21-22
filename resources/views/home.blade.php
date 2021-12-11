@@ -19,7 +19,7 @@
                 </div>
                 <div class="add">
                     <label>Tambah Laporan/Komentar</label>
-                    <a href="/lapor"><img src="images/add.png" width="13px" height="13px"></a>
+                    <a href="/buat-laporan"><img src="images/add.png" width="13px" height="13px"></a>
                 </div>
 
                 <h4>Laporan/Komentar Terakhir</h4>
@@ -31,12 +31,13 @@
                     <p>{{ $r->excerpt }}</p>
 
                     <div class="lampiran"><!-- Gambar ini cuma dummy yaak, ntar di import dari data base phpnya -->
-                        <img src="images/alt-images.jpg" width="100px" height="100px">
+                        <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="100px" height="100px">
                         <div class="info">
                             <p class="time">Waktu : {{ $r->submited_at }}</p>
-                            <a href="/view">Lihat Selengkapnya &emsp; <strong>></strong></a>
+                            <a href="/view-laporan">Lihat Selengkapnya &emsp; <strong>></strong></a>
                         </div>
                     </div>
+                    <hr>
                     @endforeach
                 </div>
             </main>

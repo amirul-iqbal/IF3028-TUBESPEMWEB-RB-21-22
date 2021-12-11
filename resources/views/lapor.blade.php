@@ -15,12 +15,13 @@
             <main>
                 <h3>Buat Laporan/Komentar Baru</h3>
                 <hr>
-                <form>
+                <form action="/store" method="POST" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="lapor">
                         <textarea name="laporan" placeholder="Masukkan Laporan/Komentar Anda"></textarea>
                     </div>
                     <div class="aspek">
-                        <select required>
+                        <select name="aspek" required>
                             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
                             <option value="aspek1">Aspek 1</option>
                             <option value="aspek2">Aspek 2</option>

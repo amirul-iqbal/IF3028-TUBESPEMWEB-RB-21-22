@@ -17,8 +17,10 @@ use App\Http\Controllers\LaporController;
 
 Route::get('/', [LaporController::class, 'index']);
 
-Route::get('/lapor', [LaporController::class, 'laporan']);
+Route::get('/buat-laporan', [LaporController::class, 'laporan']);
 
-Route::get('/view', [LaporController::class, 'show']);
+Route::get('/view-laporan', [LaporController::class, 'show']);
+
+Route::post('/store', [LaporController::class, 'store']);
 
 
