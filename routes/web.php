@@ -19,7 +19,7 @@ Route::get('/', [LaporController::class, 'index']);
 
 Route::get('/buat-laporan', [LaporController::class, 'laporan']);
 
-Route::get('/view-laporan', [LaporController::class, 'show']);
+Route::get('/view-laporan/{id}', [LaporController::class, 'show']);
 
 Route::post('/store', [LaporController::class, 'store']);
 

@@ -31,10 +31,10 @@
                     <p>{{ $r->excerpt }}</p>
 
                     <div class="lampiran"><!-- Gambar ini cuma dummy yaak, ntar di import dari data base phpnya -->
-                        <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="100px" height="100px">
+                        <img src="{{ url('/lampiran/'. $r->lampiran) }}" width="200px" height="200px">
                         <div class="info">
                             <p class="time">Waktu : {{ $r->submited_at }}</p>
-                            <a href="/view-laporan">Lihat Selengkapnya &emsp; <strong>></strong></a>
+                            <a href="/view-laporan/{{ $r->id }}">Lihat Selengkapnya &emsp; <strong>></strong></a>
                         </div>
                     </div>
                     <hr>

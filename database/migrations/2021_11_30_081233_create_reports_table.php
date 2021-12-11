@@ -17,7 +17,7 @@ class CreateReportsTable extends Migration
             $table->id();
             $table->text('excerpt');
             $table->text('body');
-            $table->string('laporan');
+            $table->string('aspek');
             $table->timestamp('submited_at');
             $table->string('lampiran')->nullable();
             $table->timestamps();

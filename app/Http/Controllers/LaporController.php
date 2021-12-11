@@ -12,12 +12,13 @@ class LaporController extends Controller
         return view('lapor');
     }
 
-    public function show() {
-        return view('view-laporan');
+    public function show($id) {
+        $report = Report::find($id);
+        return view('view-laporan', ['report' => $report]);
     }
 
     public function index(){
-		$reports = Report::get();
+		$reports = Report::all();
 		return view('home',['reports' => $reports]);
 	}
  
@@ -38,7 +39,7 @@ class LaporController extends Controller
 		Report::create([
             'excerpt' => substr($request->laporan, 0, 200),
             'body' => $request->laporan,
-            'laporan' => $request->aspek,
+            'aspek' => $request->aspek,
 			'lampiran' => $filename
 		]);
         
