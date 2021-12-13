@@ -15,7 +15,6 @@
         <p id="home-p2">Laporan/Komentar Terakhir</p>
     </div>
     <div class="list-laporan">
-        @foreach ($laporans as $laporan)
         <div class="konten-list-laporan">
             <div class="isi-laporan">
                 <p>{{ $laporan["isi"] }}</p>
@@ -27,12 +26,10 @@
                 <div class="info-lainnya">
                     <ul>
                         <li>Waktu : {{ $laporan["created_at"] }}</li>
-                        <li><a href="/detail/{{ $laporan["id"] }}">Lihat Selengkapnya <b>></b></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        @endforeach
     </div>
 </div>
 @endsection

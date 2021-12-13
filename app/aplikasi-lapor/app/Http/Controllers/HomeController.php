@@ -12,4 +12,10 @@ class HomeController extends Controller
     {
         return view('home', ["laporans" => Laporan::all()]);
     }
+
+    public function detail($id)
+    {
+        $laporan = $this->index();
+        return view('detail', ["laporan" => Laporan::find($id)]);
+    }
 }

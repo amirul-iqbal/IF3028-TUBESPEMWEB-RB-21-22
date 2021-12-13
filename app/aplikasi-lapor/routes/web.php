@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get ('/', [HomeController::class, 'index']);
 Route::get ('/buat_laporan', [BuatLaporanController::class, 'index']);
+Route::get ('/detail/{id}', [HomeController::class, 'detail']);
