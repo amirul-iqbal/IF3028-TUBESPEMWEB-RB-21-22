@@ -180,12 +180,10 @@
 }
 
 .isi-laporan {
-    height: 150px;
     overflow: hidden;
-}
-
-.list-laporan .isi-laporan {
-    max-height: 50px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 
 .list-laporan .konten-list-laporan .info-laporan .info-lampiran {
@@ -199,11 +197,66 @@
 }
 
 .list-laporan .konten-list-laporan .info-laporan .info-lainnya ul li {
-    
     padding: 5px;
 }
 
 .list-laporan .konten-list-laporan .info-laporan .info-lainnya ul li a {
     text-decoration: none;
     color: black;
+}
+
+.konten-detail {
+    height: 700px;
+    width: 100%;
+}
+
+/* style view detailLaporan.blade.php*/
+
+.laporan .konten-laporan .info-laporan-detail {
+    position: absolute;
+    bottom: 0px;
+}
+
+.konten-laporan {
+    height: 400px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-laporan-detail {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+}
+
+.laporan {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    height: 700px;
+}
+
+.isi-laporan-detail {
+    overflow: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 9;
+    -webkit-box-orient: vertical;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lampiran-detail {
+    padding-top: 5px;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lainnya-detail ul{
+    display: flex;
+    padding-top: 5px;
+   list-style: none;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lainnya-detail ul li {
+    padding: 5px;
 }

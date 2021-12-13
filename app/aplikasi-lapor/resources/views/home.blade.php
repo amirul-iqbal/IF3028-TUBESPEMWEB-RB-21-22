@@ -18,16 +18,16 @@
         @foreach ($laporans as $laporan)
         <div class="konten-list-laporan">
             <div class="isi-laporan">
-                <p>{{ $laporan["isi"] }}</p>
+                <p>{{ $laporan->isi }}</p>
             </div>
             <div class="info-laporan">
                 <div class="info-lampiran">
-                    <p>{{ $laporan["lampiran"] }}</p>
+                    <p>{{ $laporan->lampiran }}</p>
                 </div>
                 <div class="info-lainnya">
                     <ul>
-                        <li>Waktu : {{ $laporan["created_at"] }}</li>
-                        <li><a href="/detail/{{ $laporan["id"] }}">Lihat Selengkapnya <b>></b></a></li>
+                        <li>Waktu : {{ $laporan->created_at }}</li>
+                        <li><a href="/detailLaporan/{{ $laporan->id }}">Lihat Selengkapnya <b>></b></a></li>
                     </ul>
                 </div>
             </div>
