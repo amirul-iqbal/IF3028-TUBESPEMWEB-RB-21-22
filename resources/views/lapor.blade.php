@@ -23,10 +23,12 @@
                     <div class="aspek">
                         <select name="aspek" required>
                             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
-                            <option value="aspek1">Aspek 1</option>
-                            <option value="aspek2">Aspek 2</option>
-                            <option value="aspek3">Aspek 3</option>
-                            <option value="aspek4">Aspek 4</option>
+                            <option value="Layanan Siakad">Layanan Siakad</option>
+                            <option value="Pengaduan Sarana/Prasarana ITERA">Pengaduan Sarana/Prasarana ITERA</option>
+                            <option value="Pengaduan Kegiatan Mahasiswa">Pengaduan Kegiatan Mahasiswa</option>
+                            <option value="Pengaduan Aktivitas Perkuliahan">Pengaduan Aktivitas Perkuliahan</option>
+                            <option value="Request Pengembangan Sistem Informasi ITERA">Request Pengembangan Sistem Informasi ITERA</option>
+                            <option value="Kritik dan Saran Terkait Sistem Informasi ITERA">Kritik dan Saran Terkait Sistem Informasi ITERA</option>
                         </select>
                     </div>
 

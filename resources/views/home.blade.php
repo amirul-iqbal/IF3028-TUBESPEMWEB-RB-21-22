@@ -30,8 +30,9 @@
                 <div class="recent"><!-- Ini ntar pake perulangan yaa, ini cuma dummynya -->
                     <hr>
 
-                    @if (empty ($reports)) 
-                        <p> Hasil Tidak Ditemukan! </p>
+                    @if ($reports->isEmpty()) 
+                        <p style="text-align: center; color:red">Hasil Tidak Ditemukan!</p>
+                        <hr>
                         
                     @else 
                         @foreach ( $reports as $r)
@@ -53,7 +54,7 @@
             </main>
         </div>
         <footer>
-           
+
         </footer>
     </body>
 </html>
