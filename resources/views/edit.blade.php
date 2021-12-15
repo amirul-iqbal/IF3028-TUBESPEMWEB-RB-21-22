@@ -23,10 +23,12 @@
                     <div class="aspek">
                         <select name="aspek" required>
                             <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
-                            <option value="aspek1" {{ $report->aspek == 'aspek1' ? 'selected' : '' }} >Aspek 1</option>
-                            <option value="aspek2" {{ $report->aspek == 'aspek2' ? 'selected' : '' }} >Aspek 2</option>
-                            <option value="aspek3" {{ $report->aspek == 'aspek3' ? 'selected' : '' }} >Aspek 3</option>
-                            <option value="aspek4" {{ $report->aspek == 'aspek4' ? 'selected' : '' }} >Aspek 4</option>
+                            <option value="Layanan Siakad" {{ $report->aspek == 'Layanan Siakad' ? 'selected' : '' }} >Layanan Siakad</option>
+                            <option value="Pengaduan Sarana/Prasarana ITERA" {{ $report->aspek == 'Pengaduan Sarana/Prasarana ITERA' ? 'selected' : '' }} >Pengaduan Sarana/Prasarana ITERA</option>
+                            <option value="Pengaduan Kegiatan Mahasiswa" {{ $report->aspek == 'Pengaduan Kegiatan Mahasiswa' ? 'selected' : '' }} >Pengaduan Kegiatan Mahasiswa</option>
+                            <option value="Pengaduan Aktivitas Perkuliahan" {{ $report->aspek == 'Pengaduan Aktivitas Perkuliahan' ? 'selected' : '' }} >Pengaduan Aktivitas Perkuliahan</option>
+                            <option value="Request Pengembangan Sistem Informasi ITERA" {{ $report->aspek == 'Request Pengembangan Sistem Informasi ITERA' ? 'selected' : '' }} >Request Pengembangan Sistem Informasi ITERA</option>
+                            <option value="Kritik dan Saran Terkait Sistem Informasi ITERA" {{ $report->aspek == 'Kritik dan Saran Terkait Sistem Informasi ITERA' ? 'selected' : '' }} >Kritik dan Saran Terkait Sistem Informasi ITERA</option>
                         </select>
                     </div>
 
