@@ -13,8 +13,8 @@ class HomeController extends Controller
         return view('home', ["laporans" => Laporan::all()]);
     }
 
-    public function detailLaporan($id)
+    public function detailLaporan(Laporan $laporan)
     {
-        return view('detailLaporan', ["laporan" => Laporan::find($id)]);
+        return view('detailLaporan', ["laporan" => $laporan]);
     }
 }

@@ -45,47 +45,6 @@
     color: black;
 }
 
-#btn-buat-laporan {
-    height: 40px;
-    padding: 0px 5px;
-}
-
-#form {
-    position: relative;
-    border-style: solid;
-    border-width: 2px 0px;
-    height: 500px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-#textarea {
-    position: relative;
-    height: 300px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-#textarea #input-laporan {
-    height: 100%;
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 1rem;
-}
-
-#form label {
-    padding: 10px 10px 0;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
 .navbar {
     height: 50px;
     width: 100%;
@@ -151,7 +110,7 @@
 }
 
 .konten-list-laporan {
-    height: 200px;
+    height: 250px;
     width: 100%;
     border-top: 1px solid black;
     padding-top: 15px;
@@ -159,10 +118,8 @@
     position: relative;
 }
 
-.konten-buat-laporan {
-    height: 600px;
-    width: 80%;
-    margin: 0 auto;
+.header-laporan {
+    margin-bottom: 10px;
 }
 
 .info-laporan {
@@ -256,7 +213,7 @@
 .isi-laporan-detail {
     overflow: auto;
     display: -webkit-box;
-    -webkit-line-clamp: 9;
+    -webkit-line-clamp: 17;
     -webkit-box-orient: vertical;
 }
 
@@ -272,4 +229,80 @@
 
 .laporan .konten-laporan .info-laporan-detail .info-lainnya-detail ul li {
     padding: 5px;
+}
+
+
+/* style view buat laporan*/
+.konten-buat-laporan {
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inputan {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.konten-buat-laporan #form .inputan {
+    margin-top: 15px;
+}
+
+.konten-buat-laporan #form .inputan input {
+    position: absolute;
+    right: 250px;
+    width: 400px;
+    height: 25px;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.konten-buat-laporan #form .inputan .input-judul{
+    margin-top: 20px;
+}
+
+.konten-buat-laporan #form .inputan .input-nama{
+    margin-top: 5px;
+}
+
+#btn-buat-laporan {
+    height: 40px;
+    padding: 0px 5px;
+}
+
+#form {
+    position: relative;
+    border-style: solid;
+    border-width: 2px 0px;
+    height: 550px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#textarea #input-laporan {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+#form .label-laporan {
+    padding: 10px 10px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }

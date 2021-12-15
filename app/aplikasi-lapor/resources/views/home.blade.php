@@ -17,6 +17,10 @@
     <div class="list-laporan">
         @foreach ($laporans as $laporan)
         <div class="konten-list-laporan">
+            <div class="header-laporan">
+                <h2>{{ $laporan->judul }}</h2>
+                <h4>Dibuat oleh : {{ $laporan->pelapor->nama }}</h4>
+            </div>
             <div class="isi-laporan">
                 <p>{{ $laporan->isi }}</p>
             </div>

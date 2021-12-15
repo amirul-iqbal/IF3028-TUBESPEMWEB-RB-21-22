@@ -15,8 +15,8 @@
     <div class="navbar">
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/buat_laporan">Buat Laporan</a></li>
+                <li><a href="/">| Home |</a></li>
+                <li><a href="/buat_laporan">Buat Laporan |</a></li>
             </ul>
         </nav>
     </div>
