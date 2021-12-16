@@ -118,9 +118,8 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 ## **CARA INSTALASI**
    - Clone git dengan gitbash / Download repository ini ke PC anda masing masing, Letakkan di folder XAMPP/ WAMP/ LAMP.
    - Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
-   -setting base_url sesuai dengan folder server local
-   -Nikmati layanan website lapor kami tanpa bugfree!. 
-   -Terimakasih telah menggunakan program kami.
+   - Setting base_url sesuai dengan folder server local
+   - Terimakasih telah menggunakan program kami.
 
 ![](link)
    -Tampilan BlaBlaBla
