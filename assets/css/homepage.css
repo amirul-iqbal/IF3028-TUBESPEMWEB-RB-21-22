@@ -3,6 +3,7 @@ body {
 	font-size: 14px;
 	line-height: 1.618;
 	color: #333333;
+	background-image: url('https://image.freepik.com/free-photo/white-concrete-wall_53876-92803.jpg');
 }
 
 font {
@@ -22,6 +23,7 @@ fieldset,
 
 /* header */
 header {
+	background-image: url('https://image.freepik.com/free-vector/abstact-hexagon-background-memphis-style_1017-31955.jpg');
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -36,7 +38,7 @@ header {
 
 #searchlaporan form {
 	margin-top: 15px;
-	margin-	ottom: 15px;
+	margin-bottom: 15px;
 }
 
 #searchlaporan input[type="text"] {
