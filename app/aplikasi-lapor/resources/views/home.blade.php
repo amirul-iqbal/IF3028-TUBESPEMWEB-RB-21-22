@@ -3,8 +3,8 @@
 @section('konten')
 <div class="konten-home">
     <div class="cari">
-        <form action="">
-            <input type="text" placeholder="" name="search" id="placeholder-cari">
+        <form action="/" method="get">
+            <input type="text" placeholder="" name="cari" id="placeholder-cari">
             <button type="submit" id="btn-cari"><i class="fa fa-search" id="icon-cari"></i>Cari</button>
         </form>
     </div>

@@ -10,7 +10,13 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home', ["laporans" => Laporan::all()]);
+        $laporans = Laporan::latest();
+
+        if (request('cari')) {
+            $laporans->where ('isi', 'like', '%' . request('cari') . '%');
+        }
+
+        return view('home', ["laporans" => $laporans->get()]);
     }
 
     public function detailLaporan(Laporan $laporan)
