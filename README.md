@@ -120,18 +120,25 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
    - Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
    - Setting base_url sesuai dengan folder server local
 
-![](link)
-   -Tampilan BlaBlaBla
-![](link)
-   -Tampilan BlaBlaBla
-![](link)
-   -Tampilan BlaBlaBla
-![](link)
-   -Tampilan BlaBlaBla
-![](link)
-   -Tampilan BlaBlaBla
-![](link)
-   -Tampilan BlaBlaBla
+## **Hasil Lapor!**
+![](tampilan/TampilanHome.jpeg)
+   - Tampilan dari website lapor yang kami buat dimana terdapat button cari dan buat laporan.
+	
+![](tampilan/MembuatLaporan.jpeg)
+   - Tampilan dari proses pembuatan laporan dimana diminta untuk menginput minimal 20 kata, aspek pelapor dan foto sebagai lampiran.
+	
+![](tampilan/HasilLaporan.jpeg)
+   - Tampilan ketika sudah ada laporan yang dibuat.
+
+![](tampilan/LihatSelengkapnyaLaporan.jpeg)
+   - Tampilan dari laporan yang sudah dibuat secara mendetail mencakup deskripsi laporan, gambar, tanggal pembuatan, dan pelapor.
+   - Pada bagian ini dapat dilakukan edit/ubah dan hapus.
+	
+![](tampilan/UbahLaporan.jpeg)
+   - Tampilan dari pengubahan laporan dimana kita dapat mengubah deskripsi, aspek pelapor dan foto.
+	
+![](tampilan/HapusLaporan.jpeg)
+   - Tampilan ini adalah ketika kita mengklik tombol hapus pada laporan di Lihat Selengkapnya.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
