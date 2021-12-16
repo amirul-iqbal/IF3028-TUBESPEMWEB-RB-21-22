@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2021 at 03:21 PM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- Waktu pembuatan: 16 Des 2021 pada 14.57
+-- Versi server: 10.4.21-MariaDB
+-- Versi PHP: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `laporan`
+-- Struktur dari tabel `laporan`
 --
 
 CREATE TABLE `laporan` (
@@ -38,32 +38,24 @@ CREATE TABLE `laporan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `laporan`
---
-
-INSERT INTO `laporan` (`id`, `laporan`, `aspek`, `lampiran`, `ukuran_file`, `tipe_file`, `waktu`) VALUES
-(4, 'Halo HaloHaloHaloHaloHaloHalo HaloHaloHaloHaloHaloHalo HaloHaloHalo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Halo Haloa\\ a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a aa  a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a', 'Mahasiswa', 'Absen.png', 354.53, 'image/png', '2021-12-10 21:11:38'),
-(5, 'satu dua tiga empat lima enam tujuh delapan sembilan sepuluh sebelas dua belas tiga belas empat belas lima belas enam belas tujuh belas', 'Mahasiswa', 'Burung.JPG', 49.48, 'image/jpeg', '2021-12-10 21:20:18');
-
---
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `laporan`
+-- Indeks untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `laporan`
+-- AUTO_INCREMENT untuk tabel `laporan`
 --
 ALTER TABLE `laporan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
