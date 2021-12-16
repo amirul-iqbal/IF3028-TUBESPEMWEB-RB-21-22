@@ -61,12 +61,13 @@
 						omnis architecto placeat sit nobis, explicabo consectetur maxime
 						minus magni eveniet rem doloremque quae?
 					</p>
-					<div class="ket-gambar">
-						<p>Lampiran: Gambar.jpg</p>
-					</div>
 				</div>
 				<div class="selengkapnya-container">
-						<a href=""
+					<div class="row-1">
+					<p>Lampiran: Gambar.jpg</p>
+					</div>
+					<div class="row-2">
+					<a href=""
 							>Lihat Selengkapnya
 							<i
 								class="fa fa-chevron-right"
@@ -74,6 +75,7 @@
 								style="padding-left: 10px"
 							></i
 						></a>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -94,12 +96,13 @@
 						omnis architecto placeat sit nobis, explicabo consectetur maxime
 						minus magni eveniet rem doloremque quae?
 					</p>
-					<div class="ket-gambar">
-						<p>Lampiran: Gambar.jpg</p>
-					</div>
 				</div>
 				<div class="selengkapnya-container">
-						<a href=""
+					<div class="row-1">
+					<p>Lampiran: Gambar.jpg</p>
+					</div>
+					<div class="row-2">
+					<a href=""
 							>Lihat Selengkapnya
 							<i
 								class="fa fa-chevron-right"
@@ -107,6 +110,7 @@
 								style="padding-left: 10px"
 							></i
 						></a>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -127,12 +131,14 @@
 						omnis architecto placeat sit nobis, explicabo consectetur maxime
 						minus magni eveniet rem doloremque quae?
 					</p>
-					<div class="ket-gambar">
-						<p>Lampiran: Gambar.jpg</p>
-					</div>
 				</div>
+				
 				<div class="selengkapnya-container">
-						<a href=""
+					<div class="row-1">
+					<p>Lampiran: Gambar.jpg</p>
+					</div>
+					<div class="row-2">
+					<a href=""
 							>Lihat Selengkapnya
 							<i
 								class="fa fa-chevron-right"
@@ -140,6 +146,7 @@
 								style="padding-left: 10px"
 							></i
 						></a>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -238,19 +245,20 @@
 		padding-left: 350px;
 		padding-right: 350px;
 	}
-	div.keterangan-container {
-		display: flex;
-	}
 	div.waktu {
 		padding-right: 30px;
 	}
-	div.lampiran {
-		padding-right: 300px;
-	}
 	div.selengkapnya-container {
-		padding-bottom: 5px;
-		padding-left  : 1350px;
+		display:flex;
+		align-items: baseline;
+		justify-content: space-around;
+
 	}
+	div.selengkapnya-container .row-1 {
+		padding-right: 900px;
+	}
+	
+	
 	div.selengkapnya-container a {
 		color : #b7b7b7;
 		text-decoration: none;
