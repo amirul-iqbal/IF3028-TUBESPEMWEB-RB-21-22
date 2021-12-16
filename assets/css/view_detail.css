@@ -13,15 +13,14 @@ fieldset,
 	overflow: hidden;
 }
 
-/* header */
 header {
+	background-image: url('https://image.freepik.com/free-vector/abstact-hexagon-background-memphis-style_1017-31955.jpg');
 	color: white;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	min-height: 70px;
 }
 
-/* box-h */
 #boxes .container .box-h {
 	float: left;
 	width: 25%;
