@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get ('/', [HomeController::class, 'index']);
 Route::get ('/buat_laporan', [BuatLaporanController::class, 'index']);
+Route::post ('/buat_laporan', [BuatLaporanController::class, 'simpan']);
 Route::get ('/detailLaporan/{laporan}', [HomeController::class, 'detailLaporan']);

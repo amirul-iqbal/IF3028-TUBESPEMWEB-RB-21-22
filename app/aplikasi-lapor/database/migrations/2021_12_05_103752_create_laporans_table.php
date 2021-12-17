@@ -15,10 +15,10 @@ class CreateLaporansTable extends Migration
     {
         Schema::create('laporans', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pelapor_id');
+            $table->string('pelapor');
             $table->string('judul');
             $table->text('isi');
-            $table->string('aspek');
+            $table->foreignId('aspek_id');
             $table->string('lampiran');
             $table->timestamps();
         });

@@ -7,6 +7,11 @@
     </div>
     <div class="laporan">
         <div class="konten-laporan">
+            <div class="header-laporan-detail">
+                <h2>{{ $laporan->judul }}</h2>
+                <p>Dibuat oleh : {{ $laporan->pelapor }}</p>
+                <p>Aspek Laporan/Komentar : {{ $laporan->aspek->nama }}</p>
+            </div>
             <div class="isi-laporan-detail">
                 <p>{{ $laporan->isi }}</p>
             </div>

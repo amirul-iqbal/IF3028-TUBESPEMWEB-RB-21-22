@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePelaporsTable extends Migration
+class CreateAspeksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreatePelaporsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pelapors', function (Blueprint $table) {
+        Schema::create('aspeks', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('email')->unique();
-            $table->string('password');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreatePelaporsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pelapors');
+        Schema::dropIfExists('aspeks');
     }
 }

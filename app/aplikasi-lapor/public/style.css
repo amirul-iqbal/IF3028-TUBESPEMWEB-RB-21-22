@@ -187,8 +187,12 @@
     bottom: 0px;
 }
 
+.header-laporan-detail {
+    margin-bottom: 20px;
+}
+
 .konten-laporan {
-    height: 400px;
+    height: 500px;
     width: 100%;
     border-top: 1px solid black;
     padding-top: 15px;
@@ -288,7 +292,7 @@
     margin-top: 20px;
 }
 
-#textarea #input-laporan {
+#textarea #isi {
     height: 100%;
     width: 100%;
     padding-top: 30px;

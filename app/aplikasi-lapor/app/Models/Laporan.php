@@ -11,8 +11,8 @@ class Laporan extends Model
 
     protected $guarded = ['id'];
 
-    public function pelapor()
+    public function aspek()
     {
-        return $this->belongsTo(Pelapor::class);
+        return $this->belongsTo(Aspek::class);
     }
 }
