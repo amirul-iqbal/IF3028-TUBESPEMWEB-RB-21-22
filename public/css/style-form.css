@@ -3,7 +3,7 @@ body {
 }
 
 .cover {
-    width: 1000px;
+    width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
@@ -56,5 +56,32 @@ h3 {
 }
 
 hr {
-    margin: 20px 0px 30px 0px;
+    border: solid 1px;
+    border-radius: 3px;
+    color: #be0a31;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+}
+
+p.copy-right {
+    text-align: right;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+td {
+    width: 186px;
+}
+
+.name-groub label {
+    margin-left: 4px;
 }
