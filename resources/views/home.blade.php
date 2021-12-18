@@ -66,7 +66,7 @@
                                     <td>119140023</td>
                                 </tr>
                                 <tr>
-                                    <td>    Tri Aji Bagaskara</td>
+                                    <td>Tri Aji Bagaskara</td>
                                     <td>119140214</td>
                                 </tr>
                             </table>
