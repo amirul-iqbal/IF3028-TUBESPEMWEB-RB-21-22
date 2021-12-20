@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
 use App\Models\Laporan;
 
 class HomeController extends Controller
@@ -22,5 +20,11 @@ class HomeController extends Controller
     public function detailLaporan(Laporan $laporan)
     {
         return view('detailLaporan', ["laporan" => $laporan]);
+    }
+
+    public function hapus(Laporan $laporan)
+    {
+        Laporan::destroy($laporan->id);
+        return redirect('/');
     }
 }

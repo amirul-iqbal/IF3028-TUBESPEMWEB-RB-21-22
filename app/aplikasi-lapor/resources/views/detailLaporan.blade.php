@@ -24,6 +24,12 @@
                         <li>Waktu : {{ $laporan->created_at }}</li>
                     </ul>
                 </div>
+                <div class="btn-hapus-laporan">
+                    <form action="/{{ $laporan->id }}" method="post">
+                        @csrf
+                        <button onclick="return confirm('Yakin menghapus data ini?')">Hapus</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

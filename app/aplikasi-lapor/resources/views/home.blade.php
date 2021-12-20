@@ -32,7 +32,10 @@
                     <ul>
                         <li>Waktu : {{ $laporan->created_at }}</li>
                         <li><button id="btn-edit"><a href="">Edit</a></button></li>
-                        <li><button id="btn-hapus"><a href="">Hapus</a></button></li>
+                        <form action="/{{ $laporan->id }}" method="post">
+                            @csrf
+                            <li><button onclick="return confirm('Yakin menghapus data ini?')">Hapus</button></li>
+                        </form>
                         <li><a href="/detailLaporan/{{ $laporan->id }}"><button id="btn-detail">Lihat Selengkapnya</button></a></li>
                     </ul>
                 </div>
