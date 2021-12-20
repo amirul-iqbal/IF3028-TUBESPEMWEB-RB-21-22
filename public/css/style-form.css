@@ -1,44 +1,53 @@
-body {
+body 
+{
     background-image: url(/images/bg-cover.png);
 }
 
-.cover {
+.cover 
+{
     width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
 }
 
-header {
+header 
+{
     text-align: center;
     box-shadow: 0px -6px 22px 0px rgb(0 0 0 / 20%);
 }
 
 main {width: 615px;margin: auto;}
 
-main h3 {
+main h3 
+{
     text-align: center;
 }
 
 .lapor textarea {width: 609px;height: 250px;}
 
-.lapor {
+.lapor 
+{
     width: 100px;
 }
 
-.aspek {
+.aspek 
+{
     margin: 10px 0px 20px 0px;
 }
 
-.upload {
+.upload 
+{
     margin: 5px 0px 10px 0px;
 }
 
-.submit {
+.submit 
+{
     text-align: right;
 }
 
-input[type="submit"] {
+input[type="submit"] 
+{
     height: 36px;
     width: 100px;
     background: #be0a31;
@@ -47,7 +56,8 @@ input[type="submit"] {
     color: white;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover 
+{
     background: #f11950;
 }
 
@@ -55,33 +65,39 @@ h3 {
     font-family: system-ui;
 }
 
-hr {
+hr 
+{
     border: solid 1px;
     border-radius: 3px;
     color: #be0a31;
 }
 
-footer {
+footer 
+{
     width: 100%;
     margin: auto;
 }
 
-p.copy-right {
+p.copy-right 
+{
     text-align: right;
     font-style: italic;
     margin-top: 50px;
 }
 
-.profile {
+.profile 
+{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-td {
+td 
+{
     width: 186px;
 }
 
-.name-groub label {
+.name-groub label 
+{
     margin-left: 4px;
 }
