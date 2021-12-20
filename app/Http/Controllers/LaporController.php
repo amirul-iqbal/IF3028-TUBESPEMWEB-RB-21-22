@@ -18,7 +18,7 @@ class LaporController extends Controller
     }
 
     public function index(){
-		$reports = Report::all();
+		$reports = Report::paginate(3);
 		return view('home',['reports' => $reports]);
 	}
  
