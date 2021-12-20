@@ -1,32 +1,38 @@
-body {
+body 
+{
     background-image: url(/images/bg-cover.png);
 }
 
-.cover {
+.cover 
+{
     width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
 }
 
-header {
+header 
+{
     text-align: center;
     box-shadow: 0px -6px 22px 0px rgb(0 0 0 / 20%);
 }
 
-input[type="text"] {
+input[type="text"] 
+{
     width: 500px;
     height: 30px;
     border-radius: 5px;
 }
 
-.cari {
+.cari 
+{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-input[type="submit"] {
+input[type="submit"] 
+{
     height: 36px;
     width: 100px;
     background: #be0a31;
@@ -36,11 +42,13 @@ input[type="submit"] {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover 
+{
     background: #f11950;
 }
 
-.add {
+.add 
+{
     text-align: center;
     display: flex;
     flex-wrap: nowrap;
@@ -50,11 +58,13 @@ input[type="submit"]:hover {
     margin-bottom: 20px;
 }
 
-h4 {
+h4 
+{
     text-align: center;
 }
 
-.add a {
+.add a 
+{
     text-decoration: none;
     padding: 10px;
     background: #be0a31;
@@ -64,37 +74,44 @@ h4 {
     align-items: center;
 }
 
-.add a:hover {
+.add a:hover 
+{
     background: #f11950;
 }
 
-hr {
+hr 
+{
     border: solid 1px;
     border-radius: 3px;
     color: #be0a31;
 }
 
-.recent {
+.recent 
+{
     width: 1000px;
     margin: auto;
 }
 
-.time {
+.time 
+{
     margin: 0px;
 }
 
-.lampiran {
+.lampiran 
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.info {
+.info 
+{
     display: flex;
     align-items: center;
 }
 
-.info a {
+.info a 
+{
     margin-left: 16px;
     text-decoration: none;
     color: white;
@@ -103,45 +120,54 @@ hr {
     border-radius: 5px;
 }
 
-.info a:hover {
+.info a:hover 
+{
     background: #f11950;
 }
 
-p {
+p 
+{
     text-align: justify;
 }
 
 
-a.img-lampiran {
+a.img-lampiran 
+{
     text-decoration: none;
     color: #be0a31;
 }
 
-a.img-lampiran:hover {
+a.img-lampiran:hover 
+{
     color: #f11950;
 }
 
-footer {
+footer 
+{
     width: 1000px;
     margin: auto;
 }
 
-p.copy-right {
+p.copy-right 
+{
     text-align: right;
     font-style: italic;
     margin-top: 50px;
 }
 
-.profile {
+.profile 
+{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-td {
+td 
+{
     width: 186px;
 }
 
-.name-groub label {
+.name-groub label 
+{
     margin-left: 4px;
 }
