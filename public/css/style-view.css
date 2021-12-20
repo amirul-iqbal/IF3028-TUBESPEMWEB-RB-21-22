@@ -3,7 +3,7 @@ body {
 }
 
 .cover {
-    width: 1000px;
+    width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
@@ -14,7 +14,7 @@ header {
     box-shadow: 0px -6px 22px 0px rgb(0 0 0 / 20%);
 }
 
-main {width: 615px;margin: auto;}
+main {width: 1000px;margin: auto;}
 
 h3 {
     text-align: center;
@@ -29,17 +29,69 @@ h3 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 label.time {
     margin-right: 30px;
 }
 
-.delete a {
-    text-decoration: none;
-    color: #c93232;
+hr {
+    border: solid 1px;
+    border-radius: 3px;
+    color: #be0a31;
 }
 
-.delete a:hover {
-    color: blue;
+.edit {
+    width: 50px;
+    margin-bottom: 17px;
+}
+
+.edit a {
+    padding: 5px 20px;
+    text-decoration: none;
+    background: #bfa045;
+    color: white;
+    border-radius: 5px;
+}
+
+.edit a:hover {
+    background: red;
+}
+
+.hapus a {
+    padding: 5px 13px;
+    text-decoration: none;
+    background: #be0a31;
+    color: white;
+    border-radius: 5px;
+}
+
+.hapus a:hover {
+    background: red;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+}
+
+p.copy-right {
+    text-align: right;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+td {
+    width: 186px;
+}
+
+.name-groub label {
+    margin-left: 4px;
 }

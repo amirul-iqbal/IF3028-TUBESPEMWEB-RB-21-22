@@ -1,9 +1,9 @@
 body {
-	background-image: url(/images/bg-cover.png);
+    background-image: url(/images/bg-cover.png);
 }
 
 .cover {
-    width: 1000px;
+    width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
@@ -33,10 +33,11 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     color: white;
+    cursor: pointer;
 }
 
 input[type="submit"]:hover {
-	background: #f11950;
+    background: #f11950;
 }
 
 .add {
@@ -54,16 +55,27 @@ h4 {
 }
 
 .add a {
-    margin-left: 8px;
+    text-decoration: none;
+    padding: 10px;
+    background: #be0a31;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.add a:hover {
+    background: #f11950;
 }
 
 hr {
-    border: solid;
+    border: solid 1px;
     border-radius: 3px;
+    color: #be0a31;
 }
 
 .recent {
-    width: 615px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -74,20 +86,62 @@ hr {
 .lampiran {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .info {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .info a {
     margin-left: 16px;
     text-decoration: none;
-    color: black;
+    color: white;
+    padding: 7px;
+    background: #be0a31;
+    border-radius: 5px;
+}
+
+.info a:hover {
+    background: #f11950;
 }
 
 p {
     text-align: justify;
+}
+
+
+a.img-lampiran {
+    text-decoration: none;
+    color: #be0a31;
+}
+
+a.img-lampiran:hover {
+    color: #f11950;
+}
+
+footer {
+    width: 1000px;
+    margin: auto;
+}
+
+p.copy-right {
+    text-align: right;
+    font-style: italic;
+    margin-top: 50px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+td {
+    width: 186px;
+}
+
+.name-groub label {
+    margin-left: 4px;
 }

@@ -22,7 +22,7 @@
                     </div>
                     <div class="aspek">
                         <select name="aspek" required>
-                            <option value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
+                            <option id="pholder" value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
                             <option value="Layanan Siakad">Layanan Siakad</option>
                             <option value="Pengaduan Sarana/Prasarana ITERA">Pengaduan Sarana/Prasarana ITERA</option>
                             <option value="Pengaduan Kegiatan Mahasiswa">Pengaduan Kegiatan Mahasiswa</option>
@@ -40,10 +40,33 @@
                     </div>
                 </form>
                 <hr>
+                <footer>
+                    <p class="copy-right">©Copyright Tugas Besar Pemrograman Web 2021 ~ RB</p>
+                    <div class="profile">
+                        <div class="name-groub">
+                            <label>Made by:</label>
+                            <table>
+                                <tr>
+                                    <td>Ahmad Syafarudin</td>
+                                    <td>119140044</td>
+                                </tr>
+                                <tr>
+                                    <td>Dodi Devrian Andrianto</td>
+                                    <td>119140023</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri Aji Bagaskara</td>
+                                    <td>119140214</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="logo-footer">
+                            <img src="/images/logo-itera.jpg" width="150px" height="182px">
+                        </div>
+                    </div>
+                </footer>
             </main>
         </div>
-        <footer>
-            
-        </footer>
     </body>
 </html>

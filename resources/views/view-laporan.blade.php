@@ -35,14 +35,44 @@
                         <label class="time">Waktu : {{ $report->submited_at }}</label>
                         <label class="aspek">Aspek : {{ $report->aspek }}</label>
                     </div>
-                    <div class="delete">
-                        <a href="/edit/{{ $report->id }}">Edit Laporan/Komentar</a>
-                        <br>
-                        <a href="/delete/{{ $report->id }}">Hapus Laporan/Komentar <img src="/images/button.png" width="13px" height="13px"></a>
+                    <div class="action">
+                        <div class="edit">
+                            <a href="/edit/{{ $report->id }}">Edit</a>
+                        </div>
+                        <div class="hapus">
+                            <a href="/delete/{{ $report->id }}">Hapus</a>
+                        </div>
                     </div>
                 </div>
 
                 <hr>
+
+                <footer>
+                    <p class="copy-right">©Copyright Tugas Besar Pemrograman Web 2021 ~ RB</p>
+                    <div class="profile">
+                        <div class="name-groub">
+                            <label>Made by:</label>
+                            <table>
+                                <tr>
+                                    <td>Ahmad Syafarudin</td>
+                                    <td>119140044</td>
+                                </tr>
+                                <tr>
+                                    <td>Dodi Devrian Andrianto</td>
+                                    <td>119140023</td>
+                                </tr>
+                                <tr>
+                                    <td>Tri Aji Bagaskara</td>
+                                    <td>119140214</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="logo-footer">
+                            <img src="/images/logo-itera.jpg" width="150px" height="182px">
+                        </div>
+                    </div>
+                </footer>
 
             </main>
         </div>
