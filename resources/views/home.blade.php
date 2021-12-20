@@ -49,7 +49,7 @@
                         <hr>
                         @endforeach
                     @endif
-
+                    
                     {{ $reports->links('vendor.pagination.default') }}
                 </div>
 

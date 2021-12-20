@@ -18,7 +18,7 @@ class LaporController extends Controller
     }
 
     public function index(){
-		$reports = Report::paginate(3);
+		$reports = Report::paginate(5);
 		return view('home',['reports' => $reports]);
 	}
  
@@ -36,7 +36,7 @@ class LaporController extends Controller
         $file->move($folder, $filename);
  
 		Report::create([
-            'excerpt' => substr($request->laporan, 0, 200),
+            'excerpt' => substr($request->laporan, 0, 200).'.....',
             'body' => $request->laporan,
             'aspek' => $request->aspek,
 			'lampiran' => $filename,
@@ -81,7 +81,7 @@ class LaporController extends Controller
     }
 
     public function search(Request $request) {
-        $reports = Report::where('body', 'LIKE', '%'.$request->cari.'%')->orWhere('aspek', 'LIKE', '%'.$request->cari.'%')->orWhere('submited_at', 'LIKE', '%'.$request->cari.'%')->get();
+        $reports = Report::where('body', 'LIKE', '%'.$request->cari.'%')->orWhere('aspek', 'LIKE', '%'.$request->cari.'%')->orWhere('submited_at', 'LIKE', '%'.$request->cari.'%')->paginate(5);
         return view('home', ['reports' => $reports]);
     }
 }
