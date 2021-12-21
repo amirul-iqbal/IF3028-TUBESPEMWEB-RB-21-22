@@ -1,53 +1,63 @@
-body {
+body 
+{
     background-image: url(/images/bg-cover.png);
 }
 
-.cover {
+.cover 
+{
     width: 1300px;
     background: white;
     margin: auto;
     border-radius: 10px;
 }
 
-header {
+header 
+{
     text-align: center;
     box-shadow: 0px -6px 22px 0px rgb(0 0 0 / 20%);
 }
 
 main {width: 1000px;margin: auto;}
 
-h3 {
+h3 
+{
     text-align: center;
     font-family: sans-serif;
 }
 
-.detail {
+.detail 
+{
     text-align: justify;
 }
 
-.info {
+.info 
+{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: center;
 }
 
-label.time {
+label.time 
+{
     margin-right: 30px;
 }
 
-hr {
+hr 
+{
     border: solid 1px;
     border-radius: 3px;
     color: #be0a31;
 }
 
-.edit {
+.edit 
+{
     width: 50px;
     margin-bottom: 17px;
 }
 
-.edit a {
+.edit a 
+{
     padding: 5px 20px;
     text-decoration: none;
     background: #bfa045;
@@ -55,11 +65,13 @@ hr {
     border-radius: 5px;
 }
 
-.edit a:hover {
+.edit a:hover 
+{
     background: red;
 }
 
-.hapus a {
+.hapus a 
+{
     padding: 5px 13px;
     text-decoration: none;
     background: #be0a31;
@@ -67,31 +79,37 @@ hr {
     border-radius: 5px;
 }
 
-.hapus a:hover {
+.hapus a:hover 
+{
     background: red;
 }
 
-footer {
+footer 
+{
     width: 1000px;
     margin: auto;
 }
 
-p.copy-right {
+p.copy-right 
+{
     text-align: right;
     font-style: italic;
     margin-top: 50px;
 }
 
-.profile {
+.profile 
+{
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-td {
+td 
+{
     width: 186px;
 }
 
-.name-groub label {
+.name-groub label 
+{
     margin-left: 4px;
 }
