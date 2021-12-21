@@ -9,9 +9,8 @@
 				<button type="button" onclick="window.location='<?=base_url('buatlaporan');?>'">Lapor !</button>
 				<!-- Search box -->
 				<div class="box">
-					<form action=""></form>
-					<input type="text" />
-					<button type="submit"><img src="<?=base_url('assets/img/search.png');?>" class="searchImg"></button>
+					<input type="text" id="search" name="search" />
+					<button type="submit" onclick="search()"><img src="<?=base_url('assets/img/search.png');?>" class="searchImg"></button>
 				</div>
 				<!-- Akhir Search box -->
 			</div>
@@ -25,292 +24,45 @@
 
 <!-- Komentar Box -->
 <div class="komentar-body">
-	<h3>Laporan Terakhir</h3>
-	<div class="laporan-box-container">
-		<div class="laporan-text">
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum.</h4>
-			<p class=ket-waktu>Waktu : 20 - 11 - 2019 20.00</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-				eveniet nihil commodi odit dolorem non eaque, magni ab laudantium
-				exercitationem accusamus, sint rerum. Illo adipisci consequatur
-				similique deserunt necessitatibus accusantium? Lorem ipsum dolor
-				sit, amet consectetur adipisicing elit. Ratione, architecto?
-				Dignissimos, perferendis? Temporibus, perspiciatis. Adipisci iure
-				omnis architecto placeat sit nobis, explicabo consectetur maxime
-				minus magni eveniet rem doloremque quae?
-			</p>
-		</div>
-		<div class="selengkapnya-container">
-			<div class="row-1">
-				<p>Lampiran: Gambar.jpg</p>
-			</div>
-			<div class="row-2">
-				<a href=""
-				>Lihat Selengkapnya
-				<i
-				class="fa fa-chevron-right"
-				aria-hidden="true"
-				style="padding-left: 10px"
-				></i
-				></a>
+	<h3 id="header">Laporan Terakhir</h3>
+</div>
+<div id="session">
+	<?php foreach($lapor as $lp):?>
+		<div class="komentar-body">
+			<div class="laporan-box-container">
+				<div class="laporan-text">
+					<h4><?=$lp['judul'];?></h4>
+					<p class=ket-waktu>Waktu : <?=$lp['waktu'];?></p>
+					<p class=ket-waktu>Aspek : <?=$lp['aspek'];?></p>
+					<p><?=$lp['isi'];?></p>
+				</div>
+				<div class="selengkapnya-container">
+					<div class="row-1">
+						<a href="<?=base_url('assets/lampiran/').$lp['lampiran'];?>" download>Lampiran: <?=$lp['lampiran'];?></a>
+					</div>
+					<div class="row-2">
+						<a href="<?=base_url('home/detail/').$lp['id_lapor'];?>">Lihat Selengkapnya</a>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-</div>
-<div class="komentar-body">
-	<div class="laporan-box-container">
-		<div class="laporan-text">
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum.</h4>
-			<p class=ket-waktu>Waktu : 20 - 11 - 2019 20.00</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-				eveniet nihil commodi odit dolorem non eaque, magni ab laudantium
-				exercitationem accusamus, sint rerum. Illo adipisci consequatur
-				similique deserunt necessitatibus accusantium? Lorem ipsum dolor
-				sit, amet consectetur adipisicing elit. Ratione, architecto?
-				Dignissimos, perferendis? Temporibus, perspiciatis. Adipisci iure
-				omnis architecto placeat sit nobis, explicabo consectetur maxime
-				minus magni eveniet rem doloremque quae?
-			</p>
-		</div>
-		<div class="selengkapnya-container">
-			<div class="row-1">
-				<p>Lampiran: Gambar.jpg</p>
-			</div>
-			<div class="row-2">
-				<a href=""
-				>Lihat Selengkapnya
-				<i
-				class="fa fa-chevron-right"
-				aria-hidden="true"
-				style="padding-left: 10px"
-				></i
-				></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-</div>
-<div class="komentar-body">
-	<div class="laporan-box-container">
-		<div class="laporan-text">
-			<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, harum.</h4>
-			<p class=ket-waktu>Waktu : 20 - 11 - 2019 20.00</p>
-			<p>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
-				eveniet nihil commodi odit dolorem non eaque, magni ab laudantium
-				exercitationem accusamus, sint rerum. Illo adipisci consequatur
-				similique deserunt necessitatibus accusantium? Lorem ipsum dolor
-				sit, amet consectetur adipisicing elit. Ratione, architecto?
-				Dignissimos, perferendis? Temporibus, perspiciatis. Adipisci iure
-				omnis architecto placeat sit nobis, explicabo consectetur maxime
-				minus magni eveniet rem doloremque quae?
-			</p>
-		</div>
-
-		<div class="selengkapnya-container">
-			<div class="row-1">
-				<p>Lampiran: Gambar.jpg</p>
-			</div>
-			<div class="row-2">
-				<a href=""
-				>Lihat Selengkapnya
-				<i
-				class="fa fa-chevron-right"
-				aria-hidden="true"
-				style="padding-left: 10px"
-				></i
-				></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-</div>
+	<?php endforeach;?>
 <div class="next-back-page-container">
 	<button type="button">Next !</button>
 	<button type="button">Back !</button>
 </div>
+</div>
 
 
-<!-- <style>
-	body {
-		
+<script type="text/javascript">
+	function search(){
+		var dataSearch = document.getElementById('search').value
+		const xhttp = new XMLHttpRequest();
+	  	xhttp.onload = function() {
+	  		document.getElementById('header').innerHTML = 'Menampilkan hasil dari "' + dataSearch + '".';
+	    	document.getElementById("session").innerHTML = this.responseText;
+	  	}
+	  	xhttp.open("GET", "<?=base_url('home/load_data');?>?key="+dataSearch,true);
+	  	xhttp.send();
 	}
-	* {
-		font-family: Roboto;
-	}
-	.row {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		margin: 25px 0;
-	}
-	.col-1 {
-		flex-basis: 40%;
-		position: relative;
-		margin: 50px;
-	}
-	.col-1 h2 {
-		font-size: 54px;
-	}
-	.col-1 h3 {
-		font-size: 30px;
-		color: #707070;
-		font-weight: 100;
-		margin: 20px 0 10px;
-	}
-	.col-1 p {
-		font-size: 16px;
-		color: #b7b7b7;
-		font-weight: 100px;
-	}
-
-	Header {
-		padding: 2rem 1rem;
-	}
-
-	.Header h1 {
-		text-align: center;
-	}
-	div.box {
-		display: flex;
-		justify-content: center;
-	}
-	.box input[type="text"] {
-		width: 100%;
-		padding: 20px 20px;
-		margin: 10px 0;
-	}
-	.box button {
-		float: right;
-		padding: 20px 20px;
-		margin-top: 8px;
-		margin-bottom: 8px;
-		margin-right: 16px;
-		background-color: #59c5ec;
-		font-size: 17px;
-		border-color: black;
-		cursor: pointer;
-	}
-	.box button:hover {
-		background: #ffd05b;
-	}
-	div.buat-laporan-container {
-		display: flex;
-		justify-content: center;
-	}
-	.buat-laporan-container button {
-		border: none;
-		background-color: white;
-		padding: 6px 8px;
-		cursor: pointer;
-	}
-	div.komentar-body {
-		padding-left: 350px;
-		padding-right: 350px;
-	}
-	div.waktu {
-		padding-right: 30px;
-	}
-	div.selengkapnya-container {
-		display:flex;
-		align-items: baseline;
-		justify-content: space-around;
-
-	}
-	div.selengkapnya-container .row-1 {
-		padding-right: 900px;
-	}
-	
-	
-	div.selengkapnya-container a {
-		color : #b7b7b7;
-		text-decoration: none;
-	}
-	button {
-		width: 140px;
-		border: 0;
-		padding: 12px 10px;
-		outline: none;
-		color: #fff;
-		background: #59c5ec;
-		cursor: pointer;
-	}
-	button:hover {
-		background: #ffd05b;
-	}
-	.button:active {
-		background-color: #3e8e41;
-		box-shadow: 0 5px #666;
-		transform: translateY(4px);
-	}
-	.col-1::after {
-		content: "";
-		width: 10px;
-		height: 57%;
-		background: #ffd05b;
-		position: absolute;
-		left: -40px;
-		top: 8px;
-	}
-	.col-2{
-		position: relative;
-		flex-basis: 20%;
-		display: flex;
-		align-items: center;
-	}
-	.komentar-body{
-		padding-top: 50px
-	}
-	.komentar-body h3 {
-		text-align : center;
-		font-size: 30px;
-		color: black;
-		font-weight: bold;
-		
-	}
-	.laporan-box-container {
-		border: 1px solid;
-		box-shadow: 5px 10px #888888;
-	}
-	.ket-waktu {
-		font-size: 12px;
-		color: #b7b7b7;
-		font-weight: bold;
-		margin: 10px 0 5px;
-	}
-	.ket-gambar {
-		font-size: 12px;
-		color: #b7b7b7;
-		font-weight: bold;
-		margin: 10px 0 5px;
-	}
-	.laporan-text h4 {
-		font-size: 20px;
-		color: black;
-		font-weight: 900;
-		margin: 10px 0 5px;
-	}
-	.laporan-text {
-		padding: 5px;
-	}
-	.next-back-page-container {
-		padding: 2rem;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-	footer p{
-		background-color:#ffd05b;
-	}
-	.svg-wrapper {
-		position: absolute;
-		left:0;
-		width: 100%;
-	}
-</style> -->
+</script>
