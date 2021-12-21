@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2021 at 10:00 AM
+-- Generation Time: Dec 21, 2021 at 02:09 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.26
 
@@ -30,8 +30,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `lapor` (
   `id_lapor` int(11) NOT NULL,
   `judul` varchar(255) NOT NULL,
-  `isi` text NOT NULL
+  `isi` text NOT NULL,
+  `aspek` varchar(255) NOT NULL,
+  `lampiran` varchar(255) NOT NULL,
+  `waktu` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `lapor`
+--
+
+INSERT INTO `lapor` (`id_lapor`, `judul`, `isi`, `aspek`, `lampiran`, `waktu`) VALUES
+(1, 'Judul Anjay', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec diam metus. Integer in nibh quis arcu blandit tincidunt. Ut vitae imperdiet tortor, at congue.', 'Staff', '1640092151.pdf', '21 December 2021 08:09:11 PM');
 
 --
 -- Indexes for dumped tables
@@ -51,7 +61,7 @@ ALTER TABLE `lapor`
 -- AUTO_INCREMENT for table `lapor`
 --
 ALTER TABLE `lapor`
-  MODIFY `id_lapor` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_lapor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
