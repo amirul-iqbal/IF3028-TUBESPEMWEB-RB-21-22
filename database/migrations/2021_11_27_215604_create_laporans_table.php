@@ -17,8 +17,9 @@ class CreateLaporansTable extends Migration
             $table->id();
             $table->foreignId('aspek_id');
             $table->foreignId('user_id');
+            $table->string('slug')->unique();
             $table->text('isi_laporan');
-            $table->string('lampiran');
+            $table->string('lampiran')->nullable();
             $table->timestamps();
         });
     }

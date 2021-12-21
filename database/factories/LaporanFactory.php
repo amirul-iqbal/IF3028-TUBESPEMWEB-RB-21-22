@@ -24,6 +24,7 @@ class LaporanFactory extends Factory
         return [
             'aspek_id' => mt_rand(1, 2),
             'user_id' => mt_rand(1, 5),
+            'slug' => $this->faker->unique()->sentence(),
             'isi_laporan' => $this->faker->sentence(mt_rand(20, 100)),
             'lampiran' => 'ini lampiran'
         ];
