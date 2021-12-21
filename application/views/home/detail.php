@@ -8,6 +8,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->config->item('base_url'); ?>/assets/css/detail.css"media="all"/>
 		<!-- Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -82,7 +84,7 @@
 		</div>
 		
 	</body>
-	<style>
+	<!-- <style>
 		* {
 			font-family: Roboto;
 		}
@@ -178,5 +180,5 @@
 			left: -40px;
 			top: 8px;
 		}
-	</style>
+	</style> -->
 </html>

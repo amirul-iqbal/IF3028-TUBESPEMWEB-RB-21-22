@@ -5,6 +5,7 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $this->config->item('base_url'); ?>/assets/css/home.css"media="all"/>
 		<!-- Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -168,7 +169,7 @@
 	
     </footer>
 </html>
-<style>
+<!-- <style>
 	body {
 		
 	}
@@ -324,7 +325,6 @@
 	.laporan-text h4 {
 		font-size: 20px;
 		color: black;
-		text
 		font-weight: 900;
 		margin: 10px 0 5px;
 	}
@@ -345,4 +345,4 @@
 		left:0;
 		width: 100%;
 	}
-</style>
+</style> -->
