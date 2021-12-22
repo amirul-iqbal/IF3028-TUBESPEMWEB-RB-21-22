@@ -40,6 +40,71 @@ class Home extends CI_Controller {
 		}
 	}
 
+	public function load_user(){
+		$value = $_GET['query'];
+		$field = $_GET['field'];
+
+		if ($field == "uname") {
+			$user = $this->db->get_where('user',['username'=>$value])->row_array();
+			if ($user != NULL) {
+				echo "Username sudah terdaftar!";
+				exit();
+			}
+		}
+
+		if ($field == "password") {
+			if (strlen($value)<8) {
+				echo "Password harus terdiri dari minimal 8 huruf!";
+				exit();
+			}
+		}
+
+		if ($field == "unameLogin") {
+			$user = $this->db->get_where('user',['username'=>$value])->row_array();
+			if ($user == NULL) {
+				echo "User tidak terdaftar";
+				exit();
+			}
+		}
+
+		if ($field == "passwordLogin") {
+			if (strlen($value)<1) {
+				echo "Tolong isi kolom password!";
+				exit();
+			}
+		}
+	}
+
+	public function auth(){
+		$uname = $this->input->post('username');
+		$password = $this->input->post('password');
+		$submit = $this->input->post('type');
+		
+		if ($submit == 'Register') {
+			$data = [
+				'username' => $uname,
+				'password' => $password
+			];
+
+			$this->db->insert('user', $data);
+			$this->session->set_userdata('username', $uname);
+		}else{
+			$user = $this->db->get_where('user',['username'=>$uname])->row_array();
+			if ($user) {
+				if ($user['password']==$password) {
+					$this->session->set_userdata('username', $uname);
+				}else{
+					echo "password salah";
+				}
+			}
+		}
+	}
+
+	public function logout(){
+		$this->session->unset_userdata('username');
+		redirect('home');
+	}
+
 	public function detail($id){
 		$data['detail'] = $this->db->get_where('lapor',['id_lapor' => $id])->row_array();
 
