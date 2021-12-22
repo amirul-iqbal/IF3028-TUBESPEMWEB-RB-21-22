@@ -10,6 +10,10 @@ di program studi teknik informatika ITERA.
 
 ### Anggota Tim :cyclone:
 Project dikerjakan secara **berkelompok** dengan maksimal jumlah anggota adalah 2-3 orang mahasiswa (maksimal 3 orang mahasiswa!).
+Nama Anggota :
+- Muhammad Naufal Ghani   119140213
+- Rayhan Athalla Ghifary  119140225
+- RIAN DIKA ERLANGGA      119140222
 
 ### Petunjuk Pengerjaan :umbrella:
 1. Fork pada repository ini dengan akun github anda.
@@ -98,8 +102,43 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 ### Bonus
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
-### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+### **Penjelasan Teknis**
+**Instalasi Framework Codeigniter 3.1**
+      -Download Framework CI
+      -Melakukan konfigurasi dasar CI pada folder config
+      -Perancangan roadmap flowchart pembuatan aplikasi
+      -Coding dan Debugging
+
+## **Spesifikasi Simple LAPOR!**
+   - framework  : Codeigniter 3.1
+   - DBMS       : mysql
+   - Languange  : PHP, Javascript (Native)
+   - Fitur      : CRUD Laporan , Validisasi form, Search komentar.
+
+## **CARA INSTALASI**
+   - Clone git dengan gitbash / Download repository ini ke PC anda masing masing, Letakkan di folder XAMPP/ WAMP/ LAMP.
+   - Hidupkan database anda, lalu import database yang ada dalam repository ini yang berfilename `lapor.sql`. lalu beri nama "lapor" tanpa tanda petik
+   - Setting base_url sesuai dengan folder server local
+
+## **Hasil Lapor!**
+![](tampilan/TampilanHome.jpeg)
+   - Tampilan dari website lapor yang kami buat dimana terdapat button cari dan buat laporan.
+	
+![](tampilan/MembuatLaporan.jpeg)
+   - Tampilan dari proses pembuatan laporan dimana diminta untuk menginput minimal 20 kata, aspek pelapor dan foto sebagai lampiran.
+	
+![](tampilan/HasilLaporan.jpeg)
+   - Tampilan ketika sudah ada laporan yang dibuat.
+
+![](tampilan/LihatSelengkapnyaLaporan.jpeg)
+   - Tampilan dari laporan yang sudah dibuat secara mendetail mencakup deskripsi laporan, gambar, tanggal pembuatan, dan pelapor.
+   - Pada bagian ini dapat dilakukan edit/ubah dan hapus.
+	
+![](tampilan/UbahLaporan.jpeg)
+   - Tampilan dari pengubahan laporan dimana kita dapat mengubah deskripsi, aspek pelapor dan foto.
+	
+![](tampilan/HapusLaporan.jpeg)
+   - Tampilan ini adalah ketika kita mengklik tombol hapus pada laporan di Lihat Selengkapnya.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
