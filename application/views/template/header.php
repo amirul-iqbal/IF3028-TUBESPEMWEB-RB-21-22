@@ -8,9 +8,3 @@
     <link rel="stylesheet" href="<?= base_url('assets/style/main.css'); ?>">
     <title id="judul"><?= $judul ?></title>
 </head>
-
-<body>
-    <header>
-        <p>
-        </p>
-    </header>

@@ -5,27 +5,36 @@ class Home extends CI_Controller
 {
     public function index()
     {
-
         // echo "This is default function.";
         $data["judul"] = "Simple Lapor";
+
         $this->load->view('template/header', $data);
+
         $this->load->view('home_page');
-        // $this->load->view('tambah-laporan');
+        $this->load->view('tambah-laporan');
+
         $this->load->view('template/footer');
     }
-    public function hello()
-    {
-        echo "This is hello function.";
-    }
+
     public function buat()
     {
         $data["judul"] = "Simple Lapor";
+
         $this->load->view('template/header', $data);
+
         $this->load->view('tambah_laporan');
+
         $this->load->view('template/footer');
     }
-    public function login()
+
+    public function detail()
     {
-            $data["judul"] = "Login | DL Logistik";
+        $data["judul"] = "Simple Lapor";
+
+        $this->load->view('template/header', $data);
+
+        $this->load->view('detail_laporan');
+
+        $this->load->view('template/footer');
     }
 }
