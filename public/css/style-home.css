@@ -5,7 +5,7 @@ body
 
 .cover 
 {
-    width: 1300px;
+    width: 75%;
     background: white;
     margin: auto;
     border-radius: 10px;
@@ -19,7 +19,7 @@ header
 
 input[type="text"] 
 {
-    width: 500px;
+    width: 40%;
     height: 30px;
     border-radius: 5px;
 }
@@ -88,7 +88,7 @@ hr
 
 .recent 
 {
-    width: 1000px;
+    width: 75%;
     margin: auto;
 }
 
@@ -144,7 +144,7 @@ a.img-lampiran:hover
 
 footer 
 {
-    width: 1000px;
+    width: 75%;
     margin: auto;
 }
 
@@ -170,4 +170,21 @@ td
 .name-groub label 
 {
     margin-left: 4px;
+}
+
+.halaman {
+    width: 30%;
+    margin: auto;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+span.option-page {
+    background: #be0a31;
+    padding: 3px;
+    color: white;
+    border-radius: 3px;
 }
