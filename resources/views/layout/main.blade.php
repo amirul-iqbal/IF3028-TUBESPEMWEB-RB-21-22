@@ -12,7 +12,7 @@
 		@include('partials.navbar')
 		@include('partials.searchbar')
 
-		<div class="container">
+		<div>
 			@yield('container')	
 		</div>
 

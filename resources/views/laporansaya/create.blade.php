@@ -87,7 +87,6 @@
 		});
 
 		form.addEventListener('change', (event) => {
-			event.preventDefault();
 			fetch('/laporansaya/checkSlug?isi_laporan=' + isi.value)
 			.then(response => response.json())
 			.then(data => slug.value = data.slug)
