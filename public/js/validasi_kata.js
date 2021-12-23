@@ -13,9 +13,17 @@ function createReports() {
 function validasi(){
     var laporan = document.forms["formlapor"]["laporan"].value;
     laporan = laporan.split(" ");
+
     var aspek = document.forms["formlapor"]["aspek"].value;
     var lampiran = document.forms["formlapor"]["lampiran"].value;
- 
+    var ekstensiOk = /(\.jpg|\.jpeg|\.png|\.pdf|\.doc|\.docx|\.xls|\.xlsx|\.ppt|\.pptx)$/i;
+
+    if(!ekstensiOk.exec(lampiran)){
+        alert('Silakan upload file yang memiliki ekstensi .jpeg/.jpg/.png/.pdf/.doc/.docx/.xls/.xlsx/.ppt/.pptx');
+        lampiran.value = '';
+        return false;
+    }
+
     if (laporan.length < 20){
         alert("Isi laporan harus lebih dari 20 kata");
         return false;
