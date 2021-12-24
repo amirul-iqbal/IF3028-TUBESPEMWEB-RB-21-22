@@ -1,0 +1,41 @@
+* {
+	font-family: Roboto;
+}
+
+.svg-wrapper {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 25px 0;
+}
+.col-1 {
+	flex-basis: 40%;
+	position: relative;
+	margin: 50px;
+}
+button {
+	float: right;
+	padding: 15px 15px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 16px;
+	background-color: #59c5ec;
+	color: white;
+	font-size: 17px;
+	border-color: white;
+	cursor: pointer;
+}
+button:hover {
+	background: #ffd05b;
+}
+
+p#lampiranLabel{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}

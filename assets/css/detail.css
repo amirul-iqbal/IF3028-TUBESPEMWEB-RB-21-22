@@ -1,0 +1,114 @@
+* {
+	font-family: Roboto;
+}
+body {
+	padding: 5rem 15rem;
+}
+.container-detail {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: 5px solid;
+	border-color: #c4c4c4;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.judul-container {
+	padding-top: 30px;
+	text-align: center;
+}
+.judul-container h1 {
+	font-weight: bold;
+}
+button {
+	display: flex;
+	flex-direction: row;
+	float: right;
+	padding: 0px 10px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 16px;
+	color: white;
+	font-weight: bolder;
+	font-size: 17px;
+	border-color: white;
+	cursor: pointer;
+	align-items: baseline;
+}
+button#hapus{
+	background-color: red;
+}
+button#edit{
+	background-color: green;
+}
+button > p {
+	padding-right: 10px;
+}
+button#hapus:hover {
+	background: #ffd05b;
+}
+button#edit:hover {
+	background: #ffd05b;
+}
+.ket-laporan-container {
+	text-align: center;
+	color: #b7b7b7;
+}
+.gambar-container img {
+	max-width: 50%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.laporan-container {
+	padding: 2rem;
+}
+.laporan-container p {
+	font-size: 20px;
+	line-height: 1.6;
+}
+.row {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 25px 0;
+}
+.col-1 {
+	flex-basis: 40%;
+	position: relative;
+	margin: 50px;
+}
+.col-1 h2 {
+	font-size: 54px;
+}
+.col-1 h3 {
+	font-size: 30px;
+	color: #707070;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+.col-1 p {
+	font-size: 16px;
+	color: #b7b7b7;
+	font-weight: 100px;
+}
+.col-1::after {
+	content: "";
+	width: 10px;
+	height: 57%;
+	background: #ffd05b;
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+
+iframe#lampiran{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+a#link-back{
+	text-decoration: none; 
+	margin-bottom: 15px;
+}
