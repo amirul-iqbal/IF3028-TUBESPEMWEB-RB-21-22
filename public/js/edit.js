@@ -1,5 +1,7 @@
-window.addEventListener('load', function() {
-    document.formlapor.addEventListener('submit', function(e) {
+window.addEventListener('load', function() 
+{
+    document.formlapor.addEventListener('submit', function(e) 
+    {
         e.preventDefault();
         var laporan = document.forms["formlapor"]["laporan"].value;
         laporan = laporan.split(" ");
@@ -8,16 +10,19 @@ window.addEventListener('load', function() {
         var lampiran = document.forms["formlapor"]["lampiran"].value;
         var ekstensiOk = /(\.jpg|\.jpeg|\.png|\.pdf|\.doc|\.docx|\.xls|\.xlsx|\.ppt|\.pptx)$/i;
     
-        if (laporan.length < 20){
+        if (laporan.length < 20)
+        {
             alert("Isi laporan harus lebih dari 20 kata");
             return false;
         }
-        if (aspek == "" || aspek == null){
+        if (aspek == "" || aspek == null)
+        {
             alert("Aspek harus Dipilih");
             return false;
         }
     
-        if(!ekstensiOk.exec(lampiran)){
+        if(!ekstensiOk.exec(lampiran))
+        {
             alert('Silakan upload file yang memiliki ekstensi .jpeg/.jpg/.png/.pdf/.doc/.docx/.xls/.xlsx/.ppt/.pptx');
             lampiran.value = '';
             return false;
@@ -28,11 +33,13 @@ window.addEventListener('load', function() {
         uploadfile(actionURL);
     });
     
-    function _(el) {
+    function _(el) 
+    {
         return document.getElementById(el);
     }
     
-    function uploadfile(url) {
+    function uploadfile(url) 
+    {
 
       var laporan = document.forms["formlapor"]["laporan"].value;
       var aspek = document.forms["formlapor"]["aspek"].value;
@@ -47,7 +54,8 @@ window.addEventListener('load', function() {
       ajax.open("POST", url, true);
 
       for (i=0; i<metas.length; i++) { 
-          if (metas[i].getAttribute("name") == "csrf-token") {  
+          if (metas[i].getAttribute("name") == "csrf-token") 
+          {  
                 ajax.setRequestHeader("X-CSRF-Token", metas[i].getAttribute("content"));
           } 
       }
@@ -56,8 +64,10 @@ window.addEventListener('load', function() {
 
       var id = url.substring(25);
 
-      ajax.onreadystatechange=function() {
-          if (ajax.readyState==4) {
+      ajax.onreadystatechange=function() 
+      {
+          if (ajax.readyState==4) 
+          {
                 location.replace("/view-laporan/"+id);
             }
         }
