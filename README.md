@@ -99,7 +99,8 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Aplikasi `LAPOR` :heavy_exclamation_mark: merupakan aplikasi berbasis web yang dibangun menggunakan framework **Laravel** 
+- Aplikasi `LAPOR` :heavy_exclamation_mark: dibangun dengan tujuan untuk menyampaikan laporan/komentar terkait kampus ITERA
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -114,3 +115,32 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng., Muhammad Habib Algifari, S.Kom., M.T.I.
+
+
+### Instalasi :gear:
+:warning: Sebelum menginstalasi aplikasi, pastikan sudah terinstal [Composer](https://getcomposer.org) pada desktop.
+
+**Langkah Pertama :**
+Download package pada repo ini kemudian ekstrak.
+![](tampilan/download.png)
+
+**Langkah Kedua :**
+Buatlah database bernama `lapor` kemudian Import `lapor.sql` pada folder *database*
+
+**Langkah Ketiga :**
+Duplicate file `.env.example` dan rename menjadi `.env`
+![](tampilan/env.png)
+
+*Sesuaikan `DB_USERNAME` dan `DB_PASSWORD` dengan preferensi anda
+
+**Langkah Keempat :**
+- Buka `Terminal` atau `Command Prompt` dan arahkan pada folder aplikasi `LAPOR` :heavy_exclamation_mark: yang telah diekstrak kemudian jalankan perintah `composer install`
+![](tampilan/composer_install.png)
+
+- Setelah proses instalasai selesai, jalankan perintah `composer key:generate`
+
+**Langkah Kelima :**
+Menjalankan aplikasi `LAPOR` :heavy_exclamation_mark:
+- Start Apache dan MySql pada DBMS 
+- Jika anda pengguna sistem operasi *Windows* dan ingin menggunakan valet silahkan ikuti langkah instalasi [Valet](https://github.com/cretueusebiu/valet-windows) berikut. Jika sudah terinstall maka cukup menjalankan *URL* `(nama_folder).test` pada browser
+- Jika tidak menggunakan valet dapat menjalankan perintah `php artisan serve` kemudian akses *URL* `http://127.0.0.1:8000`
