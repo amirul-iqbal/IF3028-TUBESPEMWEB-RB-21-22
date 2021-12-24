@@ -10,7 +10,8 @@
 					<button type="button" class="btn" id="myBtn">Lapor !</button>	
 					<?php else:?>
 						<p>Sampaikan Laporan Anda <span style="color: black; font-weight: bold;"><?=$this->session->userdata('username');?></span> ! <a href="<?=base_url('home/logout');?>" style="text-decoration: none;">Logout?</a></p>
-						<button type="button" class="btn" onclick="window.location='<?=base_url('buatlaporan');?>'">Lapor !</button>
+						<button type="button" class="btn" onclick="window.location='<?=base_url('laporan');?>'">Lapor !</button>
+						<button type="button" class="btn" onclick="getUserLapor()">Laporan Anda</button>
 					<?php endif;?>
 					<!-- Search box -->
 					<div class="box">
@@ -20,7 +21,7 @@
 					<!-- Akhir Search box -->
 				</div>
 				<div class="col-2">
-					<img  src="<?php echo $this->config->item('base_url'); ?>/assets/img/logo.png" alt="Logo Report" />
+					<img src="<?php echo $this->config->item('base_url'); ?>/assets/img/logo.png" alt="Logo Report" />
 				</div>
 			</div>
 		</div>
@@ -40,6 +41,7 @@
 						<p class=ket-waktu>Waktu : <?=$lp['waktu'];?></p>
 						<p class=ket-waktu>Aspek : <?=$lp['aspek'];?></p>
 						<p><?=$lp['isi'];?></p>
+						<label>Oleh : <?=$lp['username'];?></label>
 					</div>
 					<div class="selengkapnya-container">
 						<div class="row-1">
@@ -52,10 +54,11 @@
 				</div>
 			</div>
 		<?php endforeach;?>
-		<div class="next-back-page-container">
-			<button type="button" class="btn">Next !</button>
-			<button type="button" class="btn">Back !</button>
-		</div>
+		<?= $this->pagination->create_links();?>
+	</div>
+
+	<div class="svg-wrapper">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFD05B" fill-opacity="1" d="M0,192L26.7,181.3C53.3,171,107,149,160,154.7C213.3,160,267,192,320,197.3C373.3,203,427,181,480,149.3C533.3,117,587,75,640,69.3C693.3,64,747,96,800,122.7C853.3,149,907,171,960,176C1013.3,181,1067,171,1120,144C1173.3,117,1227,75,1280,74.7C1333.3,75,1387,117,1413,138.7L1440,160L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
 	</div>
 
 	<div id="myModal" class="modal">
@@ -164,7 +167,12 @@
 					}else{
 						var uname1 = document.getElementById('unameLogin');
 						var password1 = document.getElementById('passwordLogin');
-						pushAuth(uname, password, btnSubmit);
+						if (uname1.innerHTML != "" || password1.innerHTML != "") {
+							alert('Tolong ubah data sesuai instruksi!');
+							return false;
+						}else{
+							pushAuth(uname, password, btnSubmit);
+						}
 					}
 				}
 			}
@@ -200,28 +208,39 @@
 				http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
 
 				http.onreadystatechange = function() {
-				    if(http.readyState == 4 && http.status == 200) {
-				        console.log(http.responseText);
-				        if (type=="Login" && http.responseText == "password salah") {
-				        	document.getElementById('passwordLogin').innerHTML = http.responseText;
-				        }else{
-				        	location.href = "<?=base_url('home');?>";
-				        }
-				    }
+					if(http.readyState == 4 && http.status == 200) {
+						console.log(http.responseText);
+						if (type=="Login" && http.responseText == "password salah") {
+							document.getElementById('passwordLogin').innerHTML = http.responseText;
+						}else{
+							location.href = "<?=base_url('home');?>";
+						}
+					}
 				}
 				http.send(params);
 			}
 		<?php endif;?>
 
 		function search(){
-			var dataSearch = document.getElementById('search').value
+			var dataSearch = document.getElementById('search').value;
 			const xhttp = new XMLHttpRequest();
 			xhttp.onload = function() {
-				document.getElementById('header').innerHTML = 'Menampilkan hasil dari "' + dataSearch + '".';
+				document.getElementById('header').innerHTML = 'Menampilkan hasil dari "' + dataSearch;
 				document.getElementById("session").innerHTML = this.responseText;
 			}
 			xhttp.open("GET", "<?=base_url('home/load_data');?>?key="+dataSearch,true);
 			xhttp.send();
+		}
+
+		function getUserLapor(){
+			var userSearch = "<?=$this->session->userdata('username');?>";
+			const xhttpUser = new XMLHttpRequest();
+			xhttpUser.onload = function() {
+				document.getElementById('header').innerHTML = 'Laporan anda';
+				document.getElementById("session").innerHTML = this.responseText;
+			}
+			xhttpUser.open("GET", "<?=base_url('home/load_lapor_user');?>?username="+userSearch,true);
+			xhttpUser.send();
 		}
 
 	</script>

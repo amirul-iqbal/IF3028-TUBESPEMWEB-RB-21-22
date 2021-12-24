@@ -34,3 +34,8 @@ button {
 button:hover {
 	background: #ffd05b;
 }
+
+p#lampiranLabel{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
