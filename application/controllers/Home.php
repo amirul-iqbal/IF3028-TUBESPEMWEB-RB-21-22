@@ -11,7 +11,7 @@ class Home extends CI_Controller
         $this->load->view('template/header', $data);
 
         $this->load->view('home_page');
-        $this->load->view('tambah_laporan');
+        #$this->load->view('tambah_laporan');
 
         $this->load->view('template/footer');
     }
@@ -24,7 +24,7 @@ class Home extends CI_Controller
 
         $this->load->view('tambah_laporan');
 
-        $this->load->view('template/footer');
+        #$this->load->view('template/footer');
     }
 
     public function detail()
