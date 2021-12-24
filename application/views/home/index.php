@@ -225,7 +225,7 @@
 			var dataSearch = document.getElementById('search').value;
 			const xhttp = new XMLHttpRequest();
 			xhttp.onload = function() {
-				document.getElementById('header').innerHTML = 'Menampilkan hasil dari "' + dataSearch;
+				document.getElementById('header').innerHTML = 'Menampilkan hasil dari "' + dataSearch+'"';
 				document.getElementById("session").innerHTML = this.responseText;
 			}
 			xhttp.open("GET", "<?=base_url('home/load_data');?>?key="+dataSearch,true);
