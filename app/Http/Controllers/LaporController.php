@@ -7,26 +7,21 @@ use App\Models\Report;
 
 class LaporController extends Controller
 {
-
     public function laporan() {
         return view('lapor');
     }
-
     public function show($id) {
         $report = Report::find($id);
         return view('view-laporan', ['report' => $report]);
     }
-
     public function index(){
 		$reports = Report::paginate(5);
 		return view('home',['reports' => $reports]);
 	}
- 
 	public function store(Request $request){
 		$this->validate($request, [
 			'lampiran' => 'required|file|mimes:jpeg,png,jpg,pdf,doc,docx,xls,xlsx,ppt,pptx,zip|max:2048',
 		]);
- 
 		$file = $request->file('lampiran');
  
 		$filename = time()."_".$file->getClientOriginalName();
@@ -42,7 +37,6 @@ class LaporController extends Controller
 			'lampiran' => $filename,
             'extensi' => $extensi
 		]);
-        
 		return redirect('/');
 	}
 
@@ -73,7 +67,6 @@ class LaporController extends Controller
         $report->save();
         return redirect('/');
     }
-
     public function delete($id) {
         $report = Report::find($id);
         $report->delete();
