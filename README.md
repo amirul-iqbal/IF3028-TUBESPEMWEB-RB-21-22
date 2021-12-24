@@ -120,5 +120,9 @@ anchor tag.
 :telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
 
 ### About :honeybee:
+TIM / KELOMPOK : 	Rizaldo ABdulrachman 14117152	
+						M. Yafi Fahmi 14117112
+						Farhan Herliansyah 118140012
+						
 
 Dosen       : Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng., Muhammad Habib Algifari, S.Kom., M.T.I.
