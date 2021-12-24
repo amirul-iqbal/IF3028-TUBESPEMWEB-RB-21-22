@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="/css/style-view.css">
+        <script src="/js/hapus.js"></script>
         <title>Lapor</title>
     </head>
     <body>
@@ -40,7 +41,7 @@
                             <a href="/edit/{{ $report->id }}">Edit</a>
                         </div>
                         <div class="hapus">
-                            <a href="/delete/{{ $report->id }}">Hapus</a>
+                            <a href="/delete/{{ $report->id }}" id="hapus">Hapus</a>
                         </div>
                     </div>
                 </div>

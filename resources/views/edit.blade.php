@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" type="text/css" href="/css/style-form.css">
+        <script src="/js/edit.js"></script>
         <title>Lapor</title>
     </head>
     <body>
@@ -13,9 +15,9 @@
                 <img src="/images/logo.png">
             </header>
             <main>
-                <h3>Buat Laporan/Komentar Baru</h3>
+                <h3>Edit Laporan/Komentar</h3>
                 <hr>
-                <form action="/update/{{ $report->id }}" method="POST" enctype="multipart/form-data">
+                <form action="/update/{{ $report->id }}" name="formlapor" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="lapor">
                         <textarea name="laporan" placeholder="Masukkan Laporan/Komentar Anda"> {{ $report->body }}</textarea>
@@ -35,8 +37,9 @@
                     <div class="upload">
                         <input type="file" name="lampiran">
                     </div>
+                    <div id="err"></div>
                     <div class="submit">
-                        <input type="submit" value="Buat LAPOR">
+                        <input type="submit" value="Edit LAPOR">
                     </div>
                 </form>
                 <hr>

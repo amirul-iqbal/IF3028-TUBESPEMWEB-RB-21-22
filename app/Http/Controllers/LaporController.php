@@ -18,7 +18,7 @@ class LaporController extends Controller
     }
 
     public function index(){
-		$reports = Report::paginate(5);
+		$reports = Report::orderBy('submited_at', 'desc')->paginate(5);
 		return view('home',['reports' => $reports]);
 	}
  

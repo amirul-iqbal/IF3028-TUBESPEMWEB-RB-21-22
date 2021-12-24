@@ -4,24 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="stylesheet" type="text/css" href="css/style-form.css">
+        <script src="/js/lapor.js"></script>
         <title>Lapor</title>
     </head>
     <body>
-        <div class="cover">
+        <div class="cover" id="cover">
             <header>
                 <img src="/images/logo.png">
             </header>
             <main>
                 <h3>Buat Laporan/Komentar Baru</h3>
                 <hr>
-                <form action="/store" method="POST" enctype="multipart/form-data">
+                <form action="/store" method="POST" enctype="multipart/form-data" name="formlapor">
                     {{ csrf_field() }}
                     <div class="lapor">
-                        <textarea name="laporan" placeholder="Masukkan Laporan/Komentar Anda"></textarea>
+                        <textarea name="laporan" id="laporan" placeholder="Masukkan Laporan/Komentar Anda"></textarea>
                     </div>
                     <div class="aspek">
-                        <select name="aspek" required>
+                        <select name="aspek">
                             <option id="pholder" value="" disabled selected>Pilih Aspek Pelaporan/Komentar</option>
                             <option value="Layanan Siakad">Layanan Siakad</option>
                             <option value="Pengaduan Sarana/Prasarana ITERA">Pengaduan Sarana/Prasarana ITERA</option>
@@ -33,8 +35,9 @@
                     </div>
 
                     <div class="upload">
-                        <input type="file" name="lampiran">
+                        <input type="file" name="lampiran" id="lampiran">
                     </div>
+                    <div id="err"></div>
                     <div class="submit">
                         <input type="submit" value="Buat LAPOR">
                     </div>
