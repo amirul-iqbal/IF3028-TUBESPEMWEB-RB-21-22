@@ -1,4 +1,5 @@
 @if ($paginator->hasPages())
+    <link rel="stylesheet" type="text/css" href="/css/style-home.css">
     <style>
         ul {
             display: flex;
