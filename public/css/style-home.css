@@ -173,7 +173,7 @@ td
 }
 
 .halaman {
-    width: 30%;
+    width: fit-content;
     margin: auto;
 }
 
