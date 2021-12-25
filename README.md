@@ -1,3 +1,8 @@
+Nama Anggota :
+1. Syifa Syauqiyah 119140116
+2. Sekar Alit Istiqomah 119140126
+3. Aryo Kusuma 119140181
+
 ## Simple `LAPOR` :heavy_exclamation_mark:
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
@@ -99,7 +104,22 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+   Instalasi framework :
+1. Mendownload composer pada https://getcomposer.org lalu install dan simpan pada folder xampp/php/…
+2. Membuka terminal dan install aplikasi Laravel Installer secara global dan menjalankan perintah : composer global require laravel/installer
+3. Untuk membuat project, membuka command prompt pada lokasi xampp/htdocs dan menjalankan perintah : composer create-project laravel/laravel (nama project)
+   Koneksi basis data :
+1. Membuat database di localhost phpmyadmin
+2. Membuka file project > .env > ubah nama database yang digunakan sesuai database yang telah dibuat menjadi :
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+3. Menjalankan perintah : php artisan make:model (nama_database) -m pada terminal
+4. Lalu untuk konfigurasi jalankan perintah : php artisan migrate
+   
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
