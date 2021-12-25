@@ -99,7 +99,8 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+- Aplikasi `LAPOR` :heavy_exclamation_mark: merupakan aplikasi berbasis web yang dibangun menggunakan framework **Laravel** 
+- Aplikasi `LAPOR` :heavy_exclamation_mark: dibangun dengan tujuan untuk menyampaikan laporan/komentar terkait kampus ITERA
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
@@ -114,3 +115,38 @@ anchor tag.
 ### About :honeybee:
 
 Dosen       : Andre Febrianto, S.Kom., M.Eng., Amirul Iqbal, S.Kom., M.Eng., Muhammad Habib Algifari, S.Kom., M.T.I.
+
+
+### Instalasi
+Instalasi dilakukan dengan meng-ekstrak file dari CodeIgniter 3 yang dapat di download [disini](https://codeigniter.com/userguide3/installation/downloads.html)
+
+**Langkah Pertama :**
+Download package pada repo ini kemudian ekstrak.
+
+![](tampilan/download.png)
+
+**Langkah Kedua :**
+Buatlah database bernama `lapor` kemudian Import `lapor.sql` yang ada pada folder *utama*
+
+**Langkah Ketiga :**
+buka file bernama `config.php` pada folder 'aplication/config/'
+
+sesuaikan `$config['base_url'] = '';` dengan url website anda, (misal `$config['base_url'] = 'http://localhost/IF3028-TUBESPEMWEB-RB-21-22/';`)
+
+**Langkah Keempat :**
+buka file bernama `autoload.php` pada folder 'aplication/config/'
+ganti `$autoload['helper'] = array();` menjadi `$autoload['helper'] = array('url', 'file', 'form');`
+
+**Langkah Kelima :**
+buka file bernama `routes.php` pada folder 'aplication/config/'
+
+ganti `$autoload['helper'] = array();` menjadi `$autoload['helper'] = array('url', 'file', 'form');`
+ganti 'welcome' pada `$route['default_controller'] = 'welcome';` menjadi nama controller yang akan anda gunakan sebagai controller utama.
+letakkan file controller pada folder `application/controllers/`, dan sesuaikan namanya dengan nama controller. (Misal `Wlcome.php`)
+
+**Langkah Keenam :**
+buka file bernama `database.php` pada folder 'aplication/config/'
+
+*Sesuaikan `username`, `password` dan `database` 
+
+### Penjelasan Website
