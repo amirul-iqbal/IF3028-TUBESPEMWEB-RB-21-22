@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\laporanController;
+use App\Models\laporan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('lapor\index');
-});
+Route::get('/', [laporanController::class,'index']);
+Route::resource('laporan', laporanController::class);
