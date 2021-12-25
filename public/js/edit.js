@@ -33,6 +33,7 @@ window.addEventListener('load', function()
         uploadfile(actionURL);
     });
     
+    
     function _(el) 
     {
         return document.getElementById(el);
@@ -40,7 +41,6 @@ window.addEventListener('load', function()
     
     function uploadfile(url) 
     {
-
       var laporan = document.forms["formlapor"]["laporan"].value;
       var aspek = document.forms["formlapor"]["aspek"].value;
       var lampiran = document.forms["formlapor"]["lampiran"].files[0];
