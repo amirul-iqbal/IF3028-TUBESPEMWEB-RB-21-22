@@ -1,11 +1,9 @@
 :root {
 	--color1: #c9e4f8;
-	--color2: #f38282;
-	--color3: #000000;
+	--color2: #8496a3;
+	--color3: #3f484e;
 }
-/* div {
-	border: 1px solid rgb(0, 0, 0);
-} */
+
 div.container {
 	background-color: var(--color1);
 	margin: auto;
@@ -18,8 +16,11 @@ div ul {
 }
 .buat {
 	text-decoration: none;
-	color: rgb(90, 90, 90);
+	color: var(--color3);
 	margin-bottom: 50px;
+}
+.card {
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container {
 	padding-top: 20px;
@@ -35,12 +36,11 @@ div ul {
 }
 .container h1 {
 	text-align: center;
+	font-size: 48px;
+	font-family: sans-serif;
 }
 .content ul {
 	list-style-type: none;
-}
-.text-center {
-	text-align: center;
 }
 .text-center {
 	text-align: center;
@@ -49,4 +49,6 @@ div ul {
 #search {
 	display: block;
 	margin: 0 auto;
+	padding: 17px;
+	width: 80%;
 }

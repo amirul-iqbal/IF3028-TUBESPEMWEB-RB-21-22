@@ -11,20 +11,19 @@
 
     <div class="container">
         <div class="judul">
-            <h1>
-                Simple Lapor !
-            </h1>
+            <h1>SIMPLE LAPOR !</h1>
         </div>
         <form action="" method="post">
             <input type="text" id="search" name="search" placeholder="Cari disini" autocomplete="off">
         </form>
         <div class="text-center" style="margin-bottom: 50px;">
-            <a class="buat" href="<?= base_url('home/buat') ?>">Buat Laporan/Komentar &plus; </a>
+            <a class="buat" href="<?= base_url('home/tambah') ?>">Buat Laporan/Komentar &plus; </a>
         </div>
 
         <!-- List View untuk daftar laporan -->
         <div class="content" id="content">
             <ul>
+                <hr>
                 <!-- akan ditambah perulangan untuk menampilkan list -->
                 <?php foreach ($laporan as $value) { ?>
                     <!-- code... -->
@@ -62,6 +61,6 @@
     </div>
     <!-- List View untuk daftar laporan -->
 
-    <input id="url" value="<?= base_url() ?>index.php/Home/detail" hidden>
+    <input id="url" value="<?php echo base_url() ?>index.php/Home/search/" hidden>
     <script src="<?= base_url('assets/script/main.js'); ?>"></script>
 </body>
