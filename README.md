@@ -99,7 +99,22 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Instalasi Framework dan koneksi Database PHPMyAdmin
+   - Download .zip codeIgniter 3 melalui link https://codeigniter.com/download dan kemudian ekstrak ke folder xampp/htdoc pada drive C
+   - Konfigurasi di folder config
+   - Konfigurasi dan koneksi database di folder config/database.php yaitu pada bagian 'hostname' => 'localhost', 'username' => '', 'password' => '', 'database' => '' menjadi  'hostname' => 'localhost', 'username' => 'root', 'password' => '', 'database' => 'lapor'
+2. Validasi pada client-side
+   - File javascript mengambil elemen form dan setiap input dari html berdasarkan id
+   - Setiap form disubmit, even listener akan melakukan beberapa aksi, yaitu:
+      a. Memastikan setiap field tidak kosong dan memunculkan alert('Tidak boleh ada kolom yang kosong') saat ada file yang kosong
+      b. Menghitung jumlah kata yang di inputkan pada kolom 'isi' dimana saat input <20 words maka akan menampilkan alert('jumlah kata dalam laporan minimal 20')
+      c. Mengecek apakah sudah ada inputan file, jika belum menginput file maka akan memunculkan alert('Harap pilih file lampiran')
+3. AJAX
+   - Pengguna menekan tombol LAPOR!
+   - Setelah sumbit form, akan diarahkan ke fungsi input() di dalam controller/laporan.php
+   - Fungsi input(), beberapa variabel menyimpan data yang dikirimkan dengan method post dan akan mengatur konfigurasi upload_path, file_types, dan file_name, kemudian file upload akan dipindahkan dan diubah dengan konfigurasi tersebut. Setelah itu, data yang disimpan dalam variabel tadi akan dikirimkan ke dalam method input_laporan() dalam model post_model.php
+   - Fungsi input_laporan() dalam model post_model.php, data yang dikirimkan dari controller akan di insert ke dalam database menggunakan codeigniter query builder
+4. Folder bawaan framework yang paling banyak digunakan dalam development yakni sub folder Models, Views, dan Controllers (MVC) pada folder application
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
