@@ -99,7 +99,18 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+1. Buat Database mysql dengan nama `lapor` 
+2. Lalu masuk kepada folder `LAPOR`
+3. Jalankan perintah `php artisan mirate` untuk membut tabel `lapors`
+4. Jika semua sudah jalankan perintah `php artisan serve` untuk menjalankan program lapor di localhost
+
+**Penjealasan**
+Program ini dibuat dengan menggunakan framework laravel 8 sebagai backend untuk melakukan CRUD ke database. Lalu diagian frontend menggunakan html, css dan javascript. HTML dan CSS digunakan untuk desain html, sedangkan javascript digunakan untuk melakukan validasi pada textarea agar user mengirimkan laporan dengan minimal 20 kata. Untuk vaidasi type file, dilakukan dibagian backend dengan mengecek ekstensi file yang di upload.
+
+**ANGGOTA KELOMPOK**
+Rahmat Miladi (119140017)
+Regen Simatupang (119140182)
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
