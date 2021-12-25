@@ -7,7 +7,7 @@
             <p><?php echo substr($value['isi'], 0, 150) ?> ....</p>
 
             <p class="lampiran">Lampiran :
-                <span style="font-weight: bold;">
+                <span>
                     <?php echo $value['file'] ?>
                 </span>
             </p>
