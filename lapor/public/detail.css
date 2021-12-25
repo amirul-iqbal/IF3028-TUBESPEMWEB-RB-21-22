@@ -1,0 +1,45 @@
+
+    .container {
+    margin: 0px 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.textbox {
+    width: 80%;
+    height: 30px;
+}
+
+.button {
+    width: 15%;
+    height: 40px;
+}
+
+.judulKecil {
+    text-align: left;
+    align-self: left;
+    text-align: left;
+}
+
+.card-bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid black;
+}
+
+.gambar {
+    max-width: 200px;
+}
+.waktu{
+    margin-left: 65%;
+}
+.detail {
+    margin-left: 3%;
+    margin-top: 15px;
+}
+
+p{
+    text-align: justify;
+} 
