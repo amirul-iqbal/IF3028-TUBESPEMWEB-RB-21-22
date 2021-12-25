@@ -1,6 +1,14 @@
-@extends('template')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="detail.css">
+    <title>Buat Laporan</title>
+</head>
 
-@section('content')
+<body>
     <div id="header">
         <h1>SIMPLE LAPOR!</h1>
     </div>
@@ -11,13 +19,13 @@
         <br>
         Lampiran:
         <br>
-        <img src="{{ $detail->file }}" class="gambar" alt="Gambar">
+        <img src="{{ $detail->lampiran }}" class="gambar" alt="Gambar">
         <div class="flex-container">
         <div class="sebaris">
-            Waktu: {{$detail->tanggal}}
+            Waktu: {{$detail->tgl_kejadian}}
             </div>
             <div class="sebaris">
-            Aspek: {{$detail->nama_aspek}}
+            Aspek: {{$detail->tipe_laporan}}
             </div>
         <div class="sebaris">
             <form method="post" action="/laporan/{{$laporan->id_laporan}}">
@@ -32,5 +40,4 @@
         <hr>
         </div>
     </div>
-
-@endsection
+</body>
