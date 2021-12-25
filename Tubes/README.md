@@ -1,9 +1,3 @@
-Nama Anggota Kelompok : 
-1. Genja Rizky Novaianto 119140093
-2. Fahriza Yusefa 119140005
-3. Taufiq Ahmad Maulana 119140152
-
-
 ## Simple `LAPOR` :heavy_exclamation_mark:
 Anda mengetahui aplikasi `lapor` yang dibuat oleh pemerintah republik indonesia? jika tidak silahkan kunjungi 
 http://lapor.go.id, maka anda akan mendapatkan laman seperti gambar di bawah
@@ -25,14 +19,9 @@ Disarankan untuk tidak melakukan commit dengan perubahan yang besar karena akan 
 penilaian (contoh: hanya melakukan satu commit kemudian dikumpulkan).
 3. Minimal commit sebanyak personil anggota tim dengan masing-masing personil tim melakukan commit sesuai dengan kesepakatan tim, penilaian individu akan dilihat.
 4. Ubah **Penjelasan Teknis** pada bagian bawah readme.md ini dengan menjelaskan bagaimana cara anda:
-   - Instalasi Framework laravel versi 8
-   - Install php versi 8.0
-   - Install composer versi 2.2.1
-   - Koneksi basis data (mysql) ke xampp
-   - Lalu buat database dengan nama lapor pada phpmyadmin
-   - lalu migrasi model ke database yang telah dibuat
-   - Lalu jalankan website dengan perintah : php artisan serve
-   - Melakukan AJAX (pengguna memberikan laporan sampai laporan/komentar) terkirim).
+   - Instalasi Framework, Koneksi basis data 
+   - Melakukan validasi pada client-side
+   - Melakukan AJAX (mulai dari pengguna melakukan klik pada tombol LAPOR! sampai laporan/komentar terkirim).
 5. Pull request dari repository anda ke repository ini dengan 
 format **NIM** - **Nama Lengkap**. **Waktu terkahir proses pull request adalah 4 hari setelah 
 ujian akhir semester (UAS)**
@@ -110,14 +99,24 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Framework yang kami gunakan adalah Laravel. Sebelum menginstal laravel, user harus menginstall PHP dan composer terlebih dahulu atau menginstall XAMPP. XAMPP adalah software cross platform yang langsung menyediakan Apache, MariaDB, PHP, dan Perl.
+
+Setelah menginstall XAMPP dan composer, buka cmd dan masuk ke htdocs pada folder XAMPP. Kemudian, ketikkan perintah
+
+composer create-project --prefer-dist laravel/laravel nama_project
+
+Jika perintah berhasil, composer akan melakukan instalasi laravel ke dalam directory yang telah ditentukan. Jika nama directory tidak ada, composer akan membuat directory dengan nama yang dimaksud. Untuk mengecek apakah laravel sudah terinstall dengan baik, masuk kedalam directory proyek melalui cmd. Kemudian, ketikkan perintah:
+
+php artisan serve
+
+Jika tulisan Laravel development server started telah muncul, buka web browser anda dan masih ke dalam alamat server yang diberikan laravel. Secara default, alamat servernya yaitu 127.0.0.1:8000. Jika muncul tampilan homepage laravel, maka instalasi sukses.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
 - CSS: margin, padding, header tag, font-size, text-align, float, clear, border, color, div, span, placeholder, 
 anchor tag.
 - Javascript : XMLHTTPRequest.
-- PHP Framework : [Codeigniter](https://codeigniter.com/en/docs), [Laravel](https://laravel.com/docs/6.x) dll.
+- PHP OOP
 - SQL query: SELECT, INSERT, UPDATE, DELETE, WHERE, operator LIKE.
 
 :telephone: Jika ada pertanyaan silakan tanyakan lewat `Asisten`.
