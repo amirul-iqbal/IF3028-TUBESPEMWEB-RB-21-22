@@ -144,3 +144,8 @@ Menjalankan aplikasi `LAPOR` :heavy_exclamation_mark:
 - Start Apache dan MySql pada DBMS 
 - Jika anda pengguna sistem operasi *Windows* dan ingin menggunakan valet silahkan ikuti langkah instalasi [Valet](https://github.com/cretueusebiu/valet-windows) berikut. Jika sudah terinstall maka cukup menjalankan *URL* `(nama_folder).test` pada browser
 - Jika tidak menggunakan valet dapat menjalankan perintah `php artisan serve` kemudian akses *URL* `http://127.0.0.1:8000`
+
+### Penjelasan Website
+#1. Halaman Home Website
+![](tampilan/home.png)
+Halaman ini berisi
