@@ -1,4 +1,5 @@
 <ul>
+    <hr>
 
     <?php foreach ($laporan as $value) { ?>
 

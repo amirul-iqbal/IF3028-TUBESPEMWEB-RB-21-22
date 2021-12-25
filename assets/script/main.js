@@ -10,9 +10,7 @@ search.addEventListener('keyup', function () {
 		if(ajaxSearch.readyState == 4 && ajaxSearch.status == 200){
 			content.innerHTML = ajaxSearch.responseText;
 		}
-        // else{
-        //     content.innerHTML = url.value+search.value+" tidak ditemukan";
-        // }
+        
     }
 
 	ajaxSearch.open('GET', url.value+search.value , true);

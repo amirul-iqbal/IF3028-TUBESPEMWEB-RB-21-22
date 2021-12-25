@@ -60,11 +60,13 @@ class Home extends CI_Controller
                 alert('Berhasil Menambah Data');
             </script>
             ";
+            redirect('index.php/Home');
         }
     }
     public function search($search)
     {
         $data['laporan'] = $this->Laporan_model->search($search);
+        $this->load->view('template/header', $data);
         $this->load->view('search/search', $data);
     }
 }

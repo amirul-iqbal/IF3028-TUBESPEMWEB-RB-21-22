@@ -28,20 +28,8 @@
                 <?php foreach ($laporan as $value) { ?>
                     <!-- code... -->
                     <li>
-                        <p><?php echo $value['isi'] ?></p>
-                        <!-- 
+                        <p><?php echo substr($value['isi'], 0, 300) ?> ....</p>
 
-                        <p class="lampiran">
-                            Lampiran :
-                            
-                        </p>
-                        <a href="#">
-                            <div class="lengkap">
-                                Selengkapnya
-                            </div>
-                        </a>
-                        <p class="waktu">waktu : </p>
- -->
                         <p class="lampiran">Lampiran :
                             <span style="font-weight: bold;">
                                 <?php echo $value['file'] ?>
