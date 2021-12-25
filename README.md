@@ -99,7 +99,16 @@ Validasi **wajib** dilakukan pada *client-side*, dengan menggunakan **javascript
 Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/komentar`.
 
 ### Penjelasan Teknis
-`Silakan isi bagian ini dengan penjelasan anda, sesuai Petunjuk Pengerjaan di atas.`
+Koneksi Database : 
+Cara men-koneksi database dengan website yang sudah dibuat ialah dengan menaruh file aplikasi ke dalam folder htdocs xampp.
+Selanjutnya buka browser dan lakukan input-an "localhost" untuk membuka website yang sudah dibuat.
+Untuk membuka databasenya, buka tab baru lalu melakukan input-an "localhost/phpmyadmin"
+Masukan query database seperti field apa saja yang dibutuhkan, tipe data dan batas maksimum dari tiap data yang di input.
+Seteleh query database dibuat, maka masukann data dengan sintaks insert into dan masukan value sesuasi field yang sudah ditetapkan.
+
+Validasi pada client side : 
+Untuk memvalidasi data, client dapat memvalidasi menggunakan fitur search pada website atau lihat selengkapnya pada laporan/komentar
+terakhir yang sudah dibuat.
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
