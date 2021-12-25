@@ -149,3 +149,6 @@ Menjalankan aplikasi `LAPOR` :heavy_exclamation_mark:
 #1. Halaman Home Website
 ![](tampilan/home.png)
 Halaman ini berisi
+
+Validasi kata 
+Pada Setiap field pada form tidak boleh kosong dan juga minimal jumlah kata dalam laporan/komentar adalah 20 kata.
