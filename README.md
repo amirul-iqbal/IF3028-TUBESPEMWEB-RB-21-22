@@ -108,6 +108,7 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 1. Mendownload composer pada https://getcomposer.org lalu install dan simpan pada folder xampp/php/…
 2. Membuka terminal dan install aplikasi Laravel Installer secara global dan menjalankan perintah : composer global require laravel/installer
 3. Untuk membuat project, membuka command prompt pada lokasi xampp/htdocs dan menjalankan perintah : composer create-project laravel/laravel (nama project)
+   
    Koneksi basis data :
 1. Membuat database di localhost phpmyadmin
 2. Membuka file project > .env > ubah nama database yang digunakan sesuai database yang telah dibuat menjadi :
