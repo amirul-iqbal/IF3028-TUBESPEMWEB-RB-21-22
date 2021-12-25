@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#head {
+    padding-top: 30px;
+}
+
+#head h1 {
+    text-align: center;
+}
+
+#placeholder-cari {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#icon-cari {
+    padding-right: 5px;
+}
+
+#btn-cari {
+    position: absolute;
+    margin-left: 0px;
+    width: 11%;
+    height: 50px;
+}
+
+#home-p1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+#home-p2 {
+   padding: 20px 0px;
+}
+
+#home-p1 p a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 15px 0px;
+    margin-left: 152px;
+}
+
+.navbar ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.konten {
+    margin: 50px 150px 110px;
+}
+
+.select {
+    margin-top: 15px;
+}
+
+.btn-pilih-file {
+    margin-top: 15px;
+}
+
+.btn-buat-laporan {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.fa-plus-square {
+    padding-left: 5px;
+}
+
+.cari {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+    margin: 5px 0px;
+}
+
+.konten-home {
+    height: 700px;
+    margin-bottom: 50px;
+}
+
+.list-laporan .konten-list-laporan .info-laporan {
+    position: absolute;
+    bottom: 0px;
+}
+
+.konten-list-laporan {
+    height: 250px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-laporan {
+    margin-bottom: 10px;
+}
+
+.info-laporan {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.list-laporan {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    min-height: 550px;
+}
+
+.isi-laporan {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
+
+
+.list-laporan .konten-list-laporan .info-laporan .info-lampiran {
+    padding-top: 5px;
+}
+
+.list-laporan .konten-list-laporan .info-laporan .info-lainnya ul{
+    display: flex;
+    padding-top: 5px;
+   list-style: none;
+}
+
+.list-laporan .konten-list-laporan .info-laporan .info-lainnya ul li {
+    padding: 5px;
+}
+
+.list-laporan .konten-list-laporan .info-laporan .info-lainnya ul li button {
+    letter-spacing: 1px;
+    padding: 0 2px;
+    height: 25px;
+    border-radius: 0.4rem;
+    border-color: grey;
+    margin-top: -5px;
+}
+
+.list-laporan .konten-list-laporan .info-laporan .info-lainnya ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.konten-detail {
+    height: 700px;
+    width: 100%;
+}
+
+/* style view detailLaporan.blade.php*/
+
+.laporan .konten-laporan .info-laporan-detail {
+    position: absolute;
+    bottom: 0px;
+}
+
+.header-laporan-detail {
+    margin-bottom: 20px;
+}
+
+.konten-laporan {
+    height: 500px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-laporan-detail {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 100%;
+}
+
+.laporan {
+    margin-bottom: 15px;
+    margin-top: 0px;
+    height: 700px;
+}
+
+.isi-laporan-detail {
+    overflow: auto;
+    display: -webkit-box;
+    -webkit-line-clamp: 17;
+    -webkit-box-orient: vertical;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lampiran-detail {
+    padding-top: 5px;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lainnya-detail ul{
+    display: flex;
+    padding-top: 5px;
+   list-style: none;
+}
+
+.laporan .konten-laporan .info-laporan-detail .info-lainnya-detail ul li {
+    padding: 5px;
+}
+
+
+/* style view buat laporan*/
+.konten-buat-laporan {
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inputan {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.konten-buat-laporan #form .inputan {
+    margin-top: 15px;
+}
+
+.konten-buat-laporan #form .inputan input {
+    position: absolute;
+    right: 250px;
+    width: 400px;
+    height: 25px;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.konten-buat-laporan #form .inputan .input-judul{
+    margin-top: 20px;
+}
+
+.konten-buat-laporan #form .inputan .input-nama{
+    margin-top: 5px;
+}
+
+#btn-buat-laporan {
+    height: 40px;
+    padding: 0px 5px;
+}
+
+#form {
+    position: relative;
+    border-style: solid;
+    border-width: 2px 0px;
+    height: 550px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#textarea {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#textarea #isi {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+#form .label-laporan {
+    padding: 10px 10px 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
