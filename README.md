@@ -107,6 +107,10 @@ Pengguna dapat mencari laporan/komentar dengan melakukan search ke `isi laporan/
 **Penjealasan**
 Program ini dibuat dengan menggunakan framework laravel 8 sebagai backend untuk melakukan CRUD ke database. Lalu diagian frontend menggunakan html, css dan javascript. HTML dan CSS digunakan untuk desain html, sedangkan javascript digunakan untuk melakukan validasi pada textarea agar user mengirimkan laporan dengan minimal 20 kata. Untuk vaidasi type file, dilakukan dibagian backend dengan mengecek ekstensi file yang di upload.
 
+**ANGGOTA KELOMPOK**
+Rahmat Miladi (119140017)
+Regen Simatupang (119140182)
+
 
 ### Knowledge
 Untuk meringankan beban tugas ini, ada berberapa keyword yang bisa anda cari untuk menyelesaikan tugas ini.
