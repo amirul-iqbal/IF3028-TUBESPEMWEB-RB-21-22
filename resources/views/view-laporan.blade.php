@@ -30,7 +30,6 @@
                     @endif
                     
                 </div>
-
                 <div class="info">
                     <div class="combine">
                         <label class="time">Waktu : {{ $report->submited_at }}</label>
@@ -47,7 +46,6 @@
                 </div>
 
                 <hr>
-
                 <footer>
                     <p class="copy-right">©Copyright Tugas Besar Pemrograman Web 2021 ~ RB</p>
                     <div class="profile">
