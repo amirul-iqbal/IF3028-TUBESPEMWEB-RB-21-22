@@ -110,6 +110,33 @@ form.example::after {
     background-color: red;
 }
 
+.navbar .right{
+    float: right;
+}
+
+.navbar .btnout{
+    background-color: #333;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+}
+
+.navbar .btnout:hover{
+    background-color: red;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+}
+
+
 /*Table data user yang telah login*/
 table {
     border-collapse: collapse;
@@ -195,4 +222,69 @@ input[type="submit"]:hover {
         width: 100%;
         margin-top: 0;
     }
+}
+
+.tombolCrud{
+    display: flex;
+}
+
+.detailLaporan{
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.editLaporan{
+    background-color: yellow;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.deleteLaporan{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.tambahLaporan{
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tombolTambahLaporan{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
