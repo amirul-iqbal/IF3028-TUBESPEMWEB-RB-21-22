@@ -150,3 +150,19 @@ buka file bernama `database.php` pada folder 'aplication/config/'
 *Sesuaikan `username`, `password` dan `database` 
 
 ### Penjelasan Website
+
+**1. Halaman Website**
+
+Halaman ini berisi tentang list laporan terbaru yang telah disubmit sebelumnya oleh pelapor. pada halaman ini terdapat fitur dimana Pengguna dapat mencari laporan/komentar dengan melakukan search ke isi laporan/komentar. disini juga terdapat fitur untuk melihat secara detail laporan yang dipilih dengan mengklik baca selengkapnya yang kemudian akan diarahkan ke halaman detail. selain itu dihalaman ini juga terdapat fitur untuk menambahkan laporan yaitu dengan menekan tombol Buat Laporan/Komentar.
+
+**2. Halaman input Laporan/Komentar**
+
+Halaman ini berfungsi untuk menginputkan laporan yang akan dibuat dengan memasukan data yang diperlukan pada form yang telah diberikan. disini terdapat fitur untuk mengirimkan laporan yang telah dibuat sebelumnya dengan menekan tombol kirim, kemudian laporan akan diteruskan ke halaman utama website.
+
+**3. Halaman Detail Laporan**
+
+Halaman ini berisi tentang penjelasan secara lengkap tentang laporan yang telah diberikan beserta data yang telah diberikan sebelumnya. pada halaman ini memiliki fitur untuk menghapus laporan dengan cara menekan tombol Hapus Laporan, kemudian akan dialihkan kehalaman utama untuk melihat bahwa laporan telah dihapus.. dihalaman ini juga terdapat fitur untuk mengedit isi laporan dengan cara menekan tombol Edit, yang kemudian akan dialihkan ke halaman edit. 
+
+**4. Halaman Edit Laporan**
+
+Pada halaman ini berfungsi untuk mengedit isi laporan jika terjadi kesalahan dalam penuisan laporan. fitur pada halaman ini sama dengan fitur yang ada dihalaman input laporan.
