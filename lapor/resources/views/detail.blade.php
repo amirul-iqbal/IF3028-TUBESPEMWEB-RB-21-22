@@ -14,6 +14,7 @@
     </div>
     <div id="wrapper">
     <div class="judulKecil">Detail Laporan/Komentar</div>
+    <hr>
         <br>
         {{$detail->isi}}
         <br>
