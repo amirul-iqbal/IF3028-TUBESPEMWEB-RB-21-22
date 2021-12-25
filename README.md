@@ -146,9 +146,18 @@ Menjalankan aplikasi `LAPOR` :heavy_exclamation_mark:
 - Jika tidak menggunakan valet dapat menjalankan perintah `php artisan serve` kemudian akses *URL* `http://127.0.0.1:8000`
 
 ### Penjelasan Website
-#1. Halaman Home Website
+## 1. Halaman Home Website
 ![](tampilan/home.png)
-Halaman ini berisi
+Halaman ini berisi tentang laporan terbaru yang di tampilkan dengan singkat dan membaginya menjadi beberapa halaman.
 
-Validasi kata 
-Pada Setiap field pada form tidak boleh kosong dan juga minimal jumlah kata dalam laporan/komentar adalah 20 kata.
+## 2. Halaman Input Laporan/Komentar
+![](tampilan/insert.png)
+Halaman ini berfungsi untuk input laporan. Laporan tersebut harus memuat lebih dari dari 20 kata. Wajib upload dengan format yang telah ditentukan
+
+## 3. Halaman View Laporan
+![](tampilan/view.png)
+Halaman ini berisi penjelesan lengkap laporan beseta info dan lampirannya
+
+## 4. Halaman Edit Laporan
+![](tampilan/edit.png)
+Halaman ini berfungsi untuk mengedit laporan jika terdapat kesalahan pada penulisan laporan.
