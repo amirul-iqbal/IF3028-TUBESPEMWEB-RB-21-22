@@ -1,4 +1,52 @@
+:root {
+	--color1: #c9e4f8;
+	--color2: #f38282;
+	--color3: #000000;
+}
+/* div {
+	border: 1px solid rgb(0, 0, 0);
+} */
+div.container {
+	background-color: var(--color1);
+	margin: auto;
+	border-radius: 20px;
+	max-width: 70%;
+	padding-top: 10px;
+}
+div ul {
+	padding-right: 40px;
+}
 .buat {
 	text-decoration: none;
 	color: rgb(90, 90, 90);
+	margin-bottom: 50px;
+}
+.container {
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.container .lampiran {
+	float: left;
+}
+.container .waktu,
+.container .lengkap {
+	float: right;
+	margin-right: 20px;
+}
+.container h1 {
+	text-align: center;
+}
+.content ul {
+	list-style-type: none;
+}
+.text-center {
+	text-align: center;
+}
+.text-center {
+	text-align: center;
+}
+
+#search {
+	display: block;
+	margin: 0 auto;
 }
