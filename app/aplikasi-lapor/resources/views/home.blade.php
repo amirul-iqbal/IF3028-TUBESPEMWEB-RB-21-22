@@ -31,7 +31,7 @@
                 <div class="info-lainnya">
                     <ul>
                         <li>Waktu : {{ $laporan->created_at }}</li>
-                        <li><button id="btn-edit"><a href="">Edit</a></button></li>
+                        <li><button id="btn-edit"><a href="/edit_laporan/{{ $laporan->id }}">Edit</a></button></li>
                         <form action="/{{ $laporan->id }}" method="post">
                             @csrf
                             <li><button onclick="return confirm('Yakin menghapus data ini?')">Hapus</button></li>

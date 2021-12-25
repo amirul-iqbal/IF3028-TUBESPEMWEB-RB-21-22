@@ -18,13 +18,14 @@ class BuatLaporanController extends Controller
 
     public function simpan(Request $request)
     {
-
+        $lampiran = $request->file('lampiran')->store('file_lampiran');
+        
         Laporan::create ([
             'pelapor' => $request->pelapor,
             'judul' => $request->judul,
             'isi' => $request->isi,
             'aspek_id' => $request->aspek_id,
-            'lampiran' => $request->lampiran
+            'lampiran' => $lampiran
         ]);
 
         return redirect('/');

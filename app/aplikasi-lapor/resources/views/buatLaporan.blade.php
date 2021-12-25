@@ -3,7 +3,7 @@
 @section('konten')
 <div class="konten-buat-laporan">
     <p>Buat Laporan/Komentar</p>
-    <form action="/buat_laporan" method="post" id="form">
+    <form action="/buat_laporan" method="post" id="form" enctype="multipart/form-data">
         @csrf
         <div class="inputan">
             <div class="input-nama">
@@ -30,6 +30,7 @@
             </select>
         </div>
         <div class="btn-pilih-file">
+            <label for="lampiran">Masukkan File Lampiran</label><br>
             <input type="file" name="lampiran" accept=".doc, .docx, .xls, .xlsx, .ppt, .pptx, .pdf, image/*" required/>
         </div>
         <div class="btn-buat-laporan">
