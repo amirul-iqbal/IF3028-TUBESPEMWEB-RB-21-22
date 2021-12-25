@@ -46,7 +46,10 @@ form.example::after {
     background-color: #333;
     margin-bottom: 5px;
 }
-
+.btnout {
+    float: right;
+    object-position: right;
+}
 .navbar a {
     float: left;
     font-size: 16px;
